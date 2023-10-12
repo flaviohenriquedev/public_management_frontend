@@ -1,0 +1,33 @@
+export type Manager = {
+    id?: number,
+    educationId?: number,
+    managerFunctionId?: number
+    name?: string
+    motherName?: string
+    fatherName?: string
+    birthDate?: Date
+    cpf?: string
+    professionalDocument?: string
+    appointmentAct?: string
+    email?: string
+    phoneNumber?: string
+    creationUserId?: number
+    creationDate?: Date
+    updateUserId?: number
+    updateDate?: Date
+    active?: boolean
+    publicPlace?: string
+    neighborhood?: string
+    cityId?: number
+    zipCode?: string
+    provisionTypeId?: number
+    stateDocProfessionalId?: number
+    companyConsultancyId?: number
+    nominationActVigencyInitial?: Date
+    nominationActVigencyFinal?: Date
+    actNominationDate?: Date
+    actNominationTypeId?: number
+    naturePositionId?: number
+    employeeId?: number
+    personId?: number
+}
