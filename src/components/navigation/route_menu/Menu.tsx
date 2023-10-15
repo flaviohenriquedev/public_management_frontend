@@ -1,12 +1,12 @@
 "use client";
 
-import { SideMenuContext } from "@/context/SideMenuContext";
-import { SubMenuItem } from "@/types/Global";
-import { useContext, useState } from "react";
-import { useRouter } from "next/navigation";
-import { SubMenu } from "./SubMenu";
+import {SideMenuContext} from "@/context/SideMenuContext";
+import {SubMenuItem} from "@/types/Global";
+import {useContext, useState} from "react";
+import {useRouter} from "next/navigation";
+import {SubMenu} from "./SubMenu";
 import * as S from "./style";
-import { Flyout } from "./Flyout";
+import {Flyout} from "./Flyout";
 
 type MenuProps = {
     description: string;

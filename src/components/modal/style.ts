@@ -64,7 +64,6 @@ export const Button = tw.div<ButtonProps>`
 `
 
 export const Content = tw.div`
-    
 `
 
 export const Footer = tw.footer`

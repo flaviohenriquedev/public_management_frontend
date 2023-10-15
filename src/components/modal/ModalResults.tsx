@@ -1,12 +1,12 @@
 import * as S from './style'
-import {ReactNode} from "react";
+import {HTMLAttributes, ReactNode} from "react";
 
-interface ModalResultsProps {
+interface ModalResultsProps extends HTMLAttributes<HTMLDivElement> {
     children: ReactNode
 }
-export function ModalResults({children} : ModalResultsProps) {
+export function ModalResults({children, className} : ModalResultsProps) {
     return (
-        <S.Result>
+        <S.Result className={className}>
             {children}
         </S.Result>
     )

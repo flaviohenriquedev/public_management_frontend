@@ -3,6 +3,7 @@ import * as S from "./style";
 
 import {BiPurchaseTag} from "react-icons/bi";
 import {MdOutlineRealEstateAgent} from "react-icons/md";
+import {FaPeopleGroup} from 'react-icons/fa6'
 
 const sizeIcon = 70;
 
@@ -15,6 +16,11 @@ const data = [
     {
         title: "Patrimônio",
         icon: <MdOutlineRealEstateAgent size={sizeIcon}/>,
+        href: "manager/patrimony",
+    },
+    {
+        title: "Gestão de RH",
+        icon: <FaPeopleGroup size={sizeIcon}/>,
         href: "manager/patrimony",
     },
 ];
