@@ -6,9 +6,9 @@ interface PageSectionProps extends HTMLAttributes<HTMLDivElement> {
     children?: ReactNode;
 }
 
-export function PageSection({title, id, children}: PageSectionProps) {
+export function PageSection({title, id, children, className}: PageSectionProps) {
     return (
-        <S.Section id={id}>
+        <S.Section id={id} className={className}>
             {title && (
                 <S.Title>
                     {title}

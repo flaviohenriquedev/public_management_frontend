@@ -4,14 +4,15 @@ import {Menu} from "@/components/navigation/route_menu/Menu";
 import {SideMenuContext} from "@/context/SideMenuContext";
 import {MenuItem} from "@/types/Global";
 import {useContext, useEffect, useState} from "react";
-import {RiMenuFoldLine, RiMenuUnfoldLine} from "react-icons/ri";
+import {RiExpandLeftLine, RiExpandRightLine} from "react-icons/ri";
+import {VscExpandAll, VscCollapseAll} from 'react-icons/vsc';
 import * as S from "./style";
 
 interface ModuleLayoutSidemenuProps {
     routes: MenuItem[];
 };
-export const ModuleLayoutSidemenu = ({ routes }: ModuleLayoutSidemenuProps) => {
-    const { expanded, setExpanded } = useContext(SideMenuContext);
+export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
+    const {expanded, setExpanded} = useContext(SideMenuContext);
 
     const [searchMenu, setSearchMenu] = useState("");
     const [filteredData, setFilteredData] = useState<MenuItem[]>(routes);
@@ -37,7 +38,7 @@ export const ModuleLayoutSidemenu = ({ routes }: ModuleLayoutSidemenuProps) => {
 
             if (routes) {
                 routes.forEach((d) => {
-                    const filteredMenu: MenuItem = { ...d };
+                    const filteredMenu: MenuItem = {...d};
                     if (
                         d.description
                             .toLowerCase()
@@ -85,13 +86,23 @@ export const ModuleLayoutSidemenu = ({ routes }: ModuleLayoutSidemenuProps) => {
                 />
                 <S.ToggleSideMenuButton id="toggle_side_menu_button" onClick={() => setExpanded(!expanded)}>
                     {expanded ? (
-                        <RiMenuFoldLine size={16} enableBackground={0} />
+                        <RiExpandLeftLine size={16} enableBackground={0}/>
                     ) : (
-                        <RiMenuUnfoldLine size={16} enableBackground={0} />
+                        <RiExpandRightLine size={16} enableBackground={0}/>
                     )}
                 </S.ToggleSideMenuButton>
             </S.SideMenuHeader>
-            <S.SideMenuList id="side_menu_list">{renderMenuItem()}</S.SideMenuList>
+            <S.SideMenuList id="side_menu_list">
+                <div className="flex justify-end w-full px-2 py-4 gap-2">
+                    <div className="hover:cursor-pointer">
+                        <VscExpandAll />
+                    </div>
+                    <div className="hover:cursor-pointer">
+                        <VscCollapseAll />
+                    </div>
+                </div>
+                {renderMenuItem()}
+            </S.SideMenuList>
         </S.Sidemenu>
     );
 };

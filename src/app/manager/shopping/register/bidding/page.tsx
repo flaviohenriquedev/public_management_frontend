@@ -1,4 +1,4 @@
-import {BiddingPage} from "@/components/pages/shopping/BiddingPage";
+import {BiddingPage} from "@/components/pages/shopping/bidding/BiddingPage";
 
 const SH_BiddingPage = () => {
     return (

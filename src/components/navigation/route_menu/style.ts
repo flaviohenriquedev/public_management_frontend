@@ -4,7 +4,7 @@ interface SideMenuListInterface {
     closed: boolean;
 }
 
-interface SideMenuItemHeaderInterface {
+interface SideMenuItemHeaderInterface  {
     expanded: boolean;
 }
 
@@ -22,9 +22,10 @@ export const SideMenuItem = tw.li<SideMenuItemHeaderInterface>`
 
 export const SideMenuItemHeader = tw.h2<SideMenuItemHeaderInterface>`
     ${(p) => p.expanded ? "bg-base-200" : "hover:bg-base-200" }
-
+    w-full
     h-8
     flex
+    justify-between
     items-center
     rounded-lg
     
@@ -36,6 +37,19 @@ export const IconContainer = tw.div`s
     ml-4
     mr-5
 `;
+
+export const ExpandIcon = tw.div<SideMenuItemHeaderInterface>`
+
+    ${(p) => p.expanded ? "-rotate-180 " : "" }
+    
+    flex
+    items-center
+    justify-center
+    mr-2
+    
+    transition-all
+    duration-300
+`
 
 export const DescriptionContainer = tw.div<SideMenuItemHeaderInterface>`
     ${(p) => (p.expanded ? "" : "text-[0]")}

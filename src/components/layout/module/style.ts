@@ -19,7 +19,7 @@ export const SidemenuAndContent = tw.div`
     w-full
     h-auto
     min-h-full
-    pt-[4rem]
+    pt-[3rem]
 `;
 
 export const Content = tw.div`
@@ -32,7 +32,7 @@ export const Header = tw.header`
     flex
     items-center
     w-full
-    h-[3rem]
+    h-8
     px-2
     fixed
     bg-secondary
@@ -52,6 +52,7 @@ export const Sidemenu = tw.aside<SideMenuInterface>`
     shadow-md
     shadow-base-200
     duration-200
+    pb-14
 `;
 
 export const SideMenuSearch = tw.div`
@@ -101,9 +102,9 @@ export const ToggleSideMenuButton = tw.button`
     w-6
     h-6
     rounded-full
-    bg-slate-100
-    border
-    border-solid
+    bg-secondary
     shadow-md
-    text-slate-600
+    text-accent-content
+    
+    hover:bg-accent-focus
 `;

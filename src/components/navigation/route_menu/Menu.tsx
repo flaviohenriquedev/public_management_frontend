@@ -7,6 +7,7 @@ import {useRouter} from "next/navigation";
 import {SubMenu} from "./SubMenu";
 import * as S from "./style";
 import {Flyout} from "./Flyout";
+import {MdExpandMore} from 'react-icons/md'
 
 type MenuProps = {
     description: string;
@@ -53,10 +54,18 @@ export const Menu = ({
     return (
         <S.SideMenuItem expanded={!menuListClosed} id="side_menu_item">
             <S.SideMenuItemHeader id="side_menu_item_header" onClick={() => handleClick()} expanded={!menuListClosed}>
-                <S.IconContainer id="side_menu_icon">{icon}</S.IconContainer>
-                <S.DescriptionContainer expanded={expanded}>
-                    {description}
-                </S.DescriptionContainer>
+                <div className="flex justify-between items-center">
+                    <S.IconContainer id="side_menu_icon">{icon}</S.IconContainer>
+                    <S.DescriptionContainer expanded={expanded}>
+                        {description}
+                    </S.DescriptionContainer>
+                </div>
+                {expanded && (
+                    <S.ExpandIcon expanded={!menuListClosed}>
+                        <MdExpandMore />
+                    </S.ExpandIcon>
+                )}
+
             </S.SideMenuItemHeader>
 
             {submenu && expanded ? (
