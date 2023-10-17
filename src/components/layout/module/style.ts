@@ -6,7 +6,6 @@ interface SideMenuInterface {
 
 
 export const Container = tw.div`
-    relative
     mt-[4rem]
     w-full
     h-screen
@@ -24,15 +23,14 @@ export const SidemenuAndContent = tw.div`
 
 export const Content = tw.div`
     w-full
-    h-auto
-    min-h-full
+    max-h-full
 `;
 
 export const Header = tw.header`
     flex
     items-center
     w-full
-    h-8
+    h-auto
     px-2
     fixed
     bg-secondary
@@ -43,7 +41,7 @@ export const Header = tw.header`
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
     ${(p) => (p.$expanded ? "w-[30rem]" : "w-20")}
-    
+
     flex
     flex-col
     flex-nowrap

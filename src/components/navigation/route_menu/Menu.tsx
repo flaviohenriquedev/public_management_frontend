@@ -1,7 +1,7 @@
 "use client";
 
 import {SideMenuContext} from "@/context/SideMenuContext";
-import {SubMenuItem} from "@/types/Global";
+import {TRoute} from "@/types/Global";
 import {useContext, useState} from "react";
 import {useRouter} from "next/navigation";
 import {SubMenu} from "./SubMenu";
@@ -12,8 +12,8 @@ import {MdExpandMore} from 'react-icons/md'
 type MenuProps = {
     description: string;
     pageName?: string;
-    icon: JSX.Element;
-    submenu?: SubMenuItem[];
+    icon?: JSX.Element;
+    submenu?: TRoute[];
     href?: string;
 };
 
@@ -28,7 +28,7 @@ export const Menu = ({
     const [menuListClosed, setMenuListClosed] = useState(true);
     const { expanded } = useContext(SideMenuContext);
 
-    function renderSubMenuItem(submenuitems: SubMenuItem[]) {
+    function renderSubMenuItem(submenuitems: TRoute[]) {
         return submenuitems.map((submenuitem) => (
             <SubMenu
                 key={submenuitem.description}

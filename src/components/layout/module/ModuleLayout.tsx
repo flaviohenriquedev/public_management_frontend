@@ -1,6 +1,6 @@
 import * as S from "./style";
 
-import {MenuItem} from "@/types/Global";
+import {TRoute} from "@/types/Global";
 import {ModuleLayoutContent} from "./ModuleLayoutContent";
 import {ModuleLayoutHeader} from "./ModuleLayoutHeader";
 import {ModuleLayoutContainer} from "./ModuleLayoutContainer";
@@ -9,7 +9,7 @@ import {ReactNode} from "react";
 import {ModuleLayoutConfig} from "@/components/layout/module/ModuleLayoutConfig";
 
 type PageLayoutProps = {
-    routes: MenuItem[];
+    routes: TRoute[];
     pageTitle: string;
     children: ReactNode;
     homeRoute?: string

@@ -1,40 +1,18 @@
 import {ModuleMenu} from "@/components/navigation/module_menu";
 import * as S from "./style";
+import {ModuleRoutes} from "@/data/routes/ModuleRoutes";
 
-import {BiPurchaseTag} from "react-icons/bi";
-import {MdOutlineRealEstateAgent} from "react-icons/md";
-import {FaPeopleGroup} from 'react-icons/fa6'
-
-const sizeIcon = 70;
-
-const data = [
-    {
-        title: "Compras",
-        icon: <BiPurchaseTag size={sizeIcon}/>,
-        href: "manager/shopping",
-    },
-    {
-        title: "Patrimônio",
-        icon: <MdOutlineRealEstateAgent size={sizeIcon}/>,
-        href: "manager/patrimony",
-    },
-    {
-        title: "Gestão de RH",
-        icon: <FaPeopleGroup size={sizeIcon}/>,
-        href: "manager/patrimony",
-    },
-];
 
 export default function ManagerPage() {
     return (
         <S.Container id="module_card_container">
-            {data &&
-                data.map((d) => (
-                    <ModuleMenu.Card key={d.title}>
-                        <ModuleMenu.Icon icon={d.icon}/>
+            {ModuleRoutes &&
+                ModuleRoutes.map((d) => (
+                    <ModuleMenu.Card key={d.description}>
+                        <ModuleMenu.Icon icon={d.icon !== undefined ? d.icon : <></>}/>
                         <ModuleMenu.Description
-                            href={d.href}
-                            description={d.title}
+                            href={d.href !== undefined ? d.href : "#" }
+                            description={d.description}
                         />
                     </ModuleMenu.Card>
                 ))}

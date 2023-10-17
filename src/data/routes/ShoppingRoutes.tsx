@@ -1,4 +1,4 @@
-import { MenuItem } from "@/types/Global";
+import { TRoute } from "@/types/Global";
 import { AiOutlineNotification } from "react-icons/ai";
 import { BiPurchaseTag } from "react-icons/bi";
 import { FaFileContract, FaSortAmountUp } from "react-icons/fa";
@@ -9,7 +9,7 @@ import {BsHouses} from "react-icons/bs";
 
 const iconSize: number | string = "1.2rem";
 
-export const ShoppingRoutes: MenuItem[] = [
+export const ShoppingRoutes: TRoute[] = [
     {
         icon: <LuNewspaper size={iconSize} />,
         description: "Administração",
@@ -71,7 +71,7 @@ export const ShoppingRoutes: MenuItem[] = [
     },
     {
         icon: <FaFileContract size={iconSize} />,
-        description: "Licitação",
+        description: "bidding",
         pageName: "Licitação",
         submenu: [
             {
@@ -125,6 +125,7 @@ export const ShoppingRoutes: MenuItem[] = [
         submenu: [
             {
                 description: "01 - Requisição",
+                pageName: "Requisição",
                 submenu: [
                     {
                         description: "1.01 - Requisição Produto / Serviço",
@@ -138,6 +139,7 @@ export const ShoppingRoutes: MenuItem[] = [
             },
             {
                 description: "03 - Solic. Compra / Fornecimento",
+                pageName: "Solic. Copra / Fornecimento.",
                 submenu: [
                     {
                         description: "3.01 - Análise de itens por Requisição",
@@ -178,6 +180,7 @@ export const ShoppingRoutes: MenuItem[] = [
             },
             {
                 description: "02 - Entrada",
+                pageName: "Entrada",
                 submenu: [
                     {
                         description:
@@ -198,6 +201,7 @@ export const ShoppingRoutes: MenuItem[] = [
             },
             {
                 description: "03 - Saída",
+                pageName: "Saída",
                 submenu: [
                     {
                         description: "3.01 - Expurgo de Produto / Serviço",
@@ -211,6 +215,7 @@ export const ShoppingRoutes: MenuItem[] = [
             },
             {
                 description: "04 - Transferência",
+                pageName: "Transferência",
                 submenu: [
                     {
                         description: "4.01 - Análise de Transferência",
@@ -224,6 +229,7 @@ export const ShoppingRoutes: MenuItem[] = [
             },
             {
                 description: "05 - Requisição de Almoxarifado",
+                pageName: "Requisição de Almoxarifado",
                 submenu: [
                     {
                         description: "5.01 - Requisição Almoxarifado",

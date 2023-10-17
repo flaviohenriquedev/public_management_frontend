@@ -1,10 +1,10 @@
-import { MenuItem } from "@/types/Global";
+import { TRoute } from "@/types/Global";
 import { BsHouses, BsPerson } from "react-icons/bs";
 import {MdOutlineWarehouse} from 'react-icons/md';
 
 const iconSize: number | string = "1.2rem";
 
-export const PatrimonyRoutes: MenuItem[] = [
+export const PatrimonyRoutes: TRoute[] = [
     {
         icon: <BsHouses size={iconSize} />,
         description: "Entidades",
@@ -26,7 +26,6 @@ export const PatrimonyRoutes: MenuItem[] = [
                 href: "manager/patrimony/register/patrimony_location",
             },
         ],
-
     },
     {
         icon: <BsPerson size={iconSize} />,

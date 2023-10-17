@@ -2,28 +2,28 @@
 
 import {Menu} from "@/components/navigation/route_menu/Menu";
 import {SideMenuContext} from "@/context/SideMenuContext";
-import {MenuItem} from "@/types/Global";
+import {TRoute} from "@/types/Global";
 import {useContext, useEffect, useState} from "react";
 import {RiExpandLeftLine, RiExpandRightLine} from "react-icons/ri";
 import {VscExpandAll, VscCollapseAll} from 'react-icons/vsc';
 import * as S from "./style";
 
 interface ModuleLayoutSidemenuProps {
-    routes: MenuItem[];
+    routes: TRoute[];
 };
 export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
     const {expanded, setExpanded} = useContext(SideMenuContext);
 
     const [searchMenu, setSearchMenu] = useState("");
-    const [filteredData, setFilteredData] = useState<MenuItem[]>(routes);
+    const [filteredData, setFilteredData] = useState<TRoute[]>(routes);
 
     function renderMenuItem() {
         return filteredData.map((route) => {
             return (
                 <Menu
                     key={route.description}
-                    description={route.description}
-                    pageName={route.pageName}
+                    description={route.description && route.description}
+                    pageName={route.pageName && route.pageName}
                     icon={route.icon}
                     submenu={route.submenu}
                     href={route.href}
@@ -34,11 +34,11 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
 
     useEffect(() => {
         const filterMenu = () => {
-            const filteredMap: { [key: string]: MenuItem } = {};
+            const filteredMap: { [key: string]: TRoute } = {};
 
             if (routes) {
                 routes.forEach((d) => {
-                    const filteredMenu: MenuItem = {...d};
+                    const filteredMenu: TRoute = {...d};
                     if (
                         d.description
                             .toLowerCase()
@@ -67,7 +67,7 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
                 });
             }
 
-            const filtered: MenuItem[] = Object.values(filteredMap);
+            const filtered: TRoute[] = Object.values(filteredMap);
             setFilteredData(filtered);
         };
 
