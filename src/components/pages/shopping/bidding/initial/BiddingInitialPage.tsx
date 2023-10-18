@@ -10,11 +10,11 @@ export function BiddingInitialPage() {
                     <li>Add Document</li>
                 </ul>
             </div>
-            <PageSection id="basic_data" title="Dados Básicos" className="h-screen bg-red-200">
+            <PageSection id="basic_data" title="Dados Básicos" className="h-screen">
                 <h1>Dados Básicos</h1>
             </PageSection>
 
-            <PageSection id="object_nature" title="Natureza do Objeto" className="h-screen bg-green-200" >
+            <PageSection id="object_nature" title="Natureza do Objeto" className="h-screen" >
                 <h1>Natureza do Objeto</h1>
             </PageSection>
         </div>

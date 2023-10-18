@@ -27,7 +27,7 @@ export const ShoppingRoutes: TRoute[] = [
         icon: <BiPurchaseTag size={iconSize} />,
         description: "Colare Compras",
         pageName: "Colare Compras",
-        href: "manager/shopping/construct",
+        href: "/manager/shopping/construct",
         submenu: [
             {
                 description: "01 - Integração",
@@ -71,7 +71,7 @@ export const ShoppingRoutes: TRoute[] = [
     },
     {
         icon: <FaFileContract size={iconSize} />,
-        description: "bidding",
+        description: "Licitação",
         pageName: "Licitação",
         submenu: [
             {
@@ -81,12 +81,13 @@ export const ShoppingRoutes: TRoute[] = [
             {
                 description: "2 - Dispensa Licitação",
                 pageName: "Dispensa Licitação",
-                href: "manager/shopping/register/dispensation_bidding",
+                href: "/manager/shopping/register/dispensation_bidding",
             },
             {
                 description: "3 - Licitação",
                 pageName: "Licitação",
-                href: "manager/shopping/register/bidding",
+                breadcrumbLink: "bidding",
+                href: "/manager/shopping/register/bidding",
             },
 
             {
@@ -252,45 +253,45 @@ export const ShoppingRoutes: TRoute[] = [
             {
                 description: "01 - Departamento",
                 pageName: "Departamento",
-                href: "manager/shopping/register/department",
+                breadcrumbLink: "department",
+                href: "/manager/shopping/register/department",
             },
         ],
-
     },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Relatório",
     //     pageName: "Relatório",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Configurações",
     //     pageName: "Configurações",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Entidades",
     //     pageName: "Entidades",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Fornecedor",
     //     pageName: "Fornecedor",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Documentos",
     //     pageName: "Documentos",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
     // {
     //     icon: <BiPurchaseTag size={iconSize} />,
     //     description: "Usuário",
     //     pageName: "Usuário",
-    //     href: "manager/shopping/order_supply",
+    //     href: "/manager/shopping/order_supply",
     // },
 ];

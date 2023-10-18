@@ -4,6 +4,7 @@ export type TRoute = {
     icon?: JSX.Element;
     description: string;
     pageName: string;
+    breadcrumbLink?: string;
     href?: string;
     submenu?: TRoute[];
 };

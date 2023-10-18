@@ -12,7 +12,7 @@ export const Container = tw.div`
     items-start
     w-screen
     h-screen
-    z-10
+    z-50
     top-0
     left-0
     right-0

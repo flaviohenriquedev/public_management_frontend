@@ -93,13 +93,13 @@ export const SideSubMenuSubList = tw.ul<SideMenuListInterface>`
     ${(p) => (p.closed ? "hidden" : "block")}
 `;
 
-export const Flyout = tw.div`
+export const Flyout = tw.div`    
     absolute
+    
     w-96
     ml-12
     opacity-0
     invisible
-    z-20
     shadow-md
     rounded-md
     py-1

@@ -1,9 +1,15 @@
+'use client'
+
 import * as S from "./style";
+import {ReactNode, useContext} from "react";
+import {SideMenuContext} from "@/context/SideMenuContext";
 
 interface ModuleLayoutContentProps {
-    children: React.ReactNode;
+    children: ReactNode;
 };
 
 export const ModuleLayoutContent = ({ children }: ModuleLayoutContentProps) => {
-    return <S.Content>{children}</S.Content>;
+    const {expanded, setExpanded} = useContext(SideMenuContext);
+
+    return <S.Content $expanded={expanded}>{children}</S.Content>;
 };

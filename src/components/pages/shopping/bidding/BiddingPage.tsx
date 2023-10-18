@@ -6,7 +6,6 @@ import {biddingTabs} from './biddingTabs'
 export function BiddingPage() {
     return (
         <PageLayout.Container>
-            <PageLayout.Title title="Licitação" />
             <PageLayout.Content>
                 <PageTab tabs={biddingTabs} />
             </PageLayout.Content>

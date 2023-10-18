@@ -92,7 +92,7 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
                     )}
                 </S.ToggleSideMenuButton>
             </S.SideMenuHeader>
-            <S.SideMenuList id="side_menu_list">
+            <S.SideMenuList id="side_menu_list" className="overflow-y-scroll">
                 <div className="flex justify-end w-full px-2 py-4 gap-2">
                     <div className="hover:cursor-pointer">
                         <VscExpandAll />

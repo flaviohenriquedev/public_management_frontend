@@ -21,36 +21,48 @@ export const SidemenuAndContent = tw.div`
     pt-[3rem]
 `;
 
-export const Content = tw.div`
+export const Content = tw.div<SideMenuInterface>`
+    ${(p) => (p.$expanded ? "pl-[30rem]" : "pl-24")}
+    
+    fixed
     w-full
     max-h-full
+    duration-200
+    overflow-scroll
 `;
 
 export const Header = tw.header`
     flex
     items-center
     w-full
-    h-auto
-    px-2
+    h-9
+    px-4
+    gap-2
     fixed
     bg-secondary
     text-secondary-content
+    text-lg
+    breadcrumbs
     z-10
 `;
 
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
-    ${(p) => (p.$expanded ? "w-[30rem]" : "w-20")}
+    ${(p) => (p.$expanded ? "w-[30rem]" : "w-24")}
 
+    fixed
+     
     flex
     flex-col
     flex-nowrap
     rounded-tr-md
+    h-full
     bg-header_bg_color
     shadow-md
     shadow-base-200
     duration-200
     pb-14
+    z-20
 `;
 
 export const SideMenuSearch = tw.div`
@@ -63,11 +75,14 @@ export const SideMenuSearch = tw.div`
 `;
 
 export const SideMenuList = tw.ul`
+    
     flex
     flex-col
     gap-2
+    h-full
     p-3
     rounded-md
+    pb-[20rem]
 `;
 
 export const SideMenuHeader = tw.div<SideMenuInterface>`

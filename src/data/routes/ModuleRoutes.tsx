@@ -6,20 +6,22 @@ const sizeIcon = 70;
 export const ModuleRoutes: TRoute[] = [
     {
         icon: <BiPurchaseTag size={sizeIcon}/>,
-        description: "shopping",
+        description: "Compras",
         pageName: "Compras",
-        href: "manager/shopping",
+        breadcrumbLink: "shopping",
+        href: "/manager/shopping",
     },
     {
         icon: <MdOutlineRealEstateAgent size={sizeIcon}/>,
         description: "Patrimônio",
         pageName: "Patrimônio",
-        href: "manager/patrimony",
+        breadcrumbLink: "patrimony",
+        href: "/manager/patrimony",
     },
     {
         icon: <FaPeopleGroup size={sizeIcon}/>,
         description: "Gestão de RH",
         pageName: "Gestão de RH",
-        href: "manager/patrimony",
+        href: "/manager/patrimony",
     },
 ];

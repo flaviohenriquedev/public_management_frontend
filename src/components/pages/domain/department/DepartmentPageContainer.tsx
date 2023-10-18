@@ -24,7 +24,6 @@ export default function DepartmentPageContainer() {
 
     return (
         <PageLayout.Container>
-            <PageLayout.Title title="Departamento"/>
             <PageLayout.Content>
                 <DepartmentComponent.Form department={department} setDepartment={setDepartment} cantEdit={cantEdit}/>
             </PageLayout.Content>

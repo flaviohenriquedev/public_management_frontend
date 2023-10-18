@@ -6,7 +6,6 @@ import {TRoute} from "@/types/Global";
 import {useEffect, useState} from "react";
 import {ShoppingRoutes} from "@/data/routes/ShoppingRoutes";
 import {ModuleRoutes} from "@/data/routes/ModuleRoutes";
-import {useFetcher} from "react-router-dom";
 import Link from "next/link";
 
 interface ModuleLayoutHeaderProps {
@@ -16,27 +15,44 @@ interface ModuleLayoutHeaderProps {
 
 export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderProps) => {
     const pathName = usePathname();
-    const pathNameArray = pathName.split("/").filter(pt => pt !== '')
+    const pathNameSplit: string[] = pathName.split("/");
     const [routes, setRoutes] = useState<TRoute[]>([]);
-    const [routesFiltered, setRoutesFiltered] = useState<TRoute[]>([]);
 
     useEffect(() => {
-        setRoutes([...ShoppingRoutes, ...ModuleRoutes])
+        setRoutes([...ShoppingRoutes, ...ModuleRoutes]);
     }, []);
 
-    useEffect(() => {
-        pathNameArray && pathNameArray.map(pt => {
-            setRoutesFiltered(routes.filter(r => r.description === pt))
+    function getRouteRecursively(routesToSearch: TRoute[] = routes) {
+        const matchingRoutes: TRoute[] = [];
+
+        pathNameSplit.map(value => {
+            routesToSearch.forEach((route) => {
+                if (route.breadcrumbLink === value) {
+                    matchingRoutes.push(route);
+                }
+                if (route.submenu) {
+                    // Verifique as rotas no submenu atual
+                    const submenuMatch = route.submenu.find((submenuRoute) => submenuRoute.breadcrumbLink === value);
+                    if (submenuMatch) {
+                        matchingRoutes.push(submenuMatch);
+                    }
+                }
+            });
         })
-    }, [pathNameArray]);
+
+        return matchingRoutes;
+    }
 
     return (
         <S.Header id="module_layout_header">
-            <div className="flex flex-col">
-                {routesFiltered && routesFiltered.map(r => (
-                    <label key={r.description}>{r.description}</label>
+            <ul>
+                {getRouteRecursively().map((routeItem, routeIndex) => (
+                    <li key={routeIndex}>
+                        <Link href={routeItem.href !== undefined ? routeItem.href : "#"}>{routeItem.pageName}</Link>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </S.Header>
     );
 };
+

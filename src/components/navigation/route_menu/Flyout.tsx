@@ -1,4 +1,3 @@
-import { useState } from "react";
 import * as S from "./style";
 
 interface FlyoutProps {
@@ -6,7 +5,5 @@ interface FlyoutProps {
 }
 
 export const Flyout = ({ children }: FlyoutProps) => {
-    const [subMenuListClosed, setSubMenuListClosed] = useState(true);
-
-    return <S.Flyout>{children}</S.Flyout>;
+    return <S.Flyout className="z-50">{children}</S.Flyout>;
 };
