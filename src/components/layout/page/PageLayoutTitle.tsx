@@ -3,7 +3,7 @@
 import * as S from "./style";
 
 interface PageLayoutTitleProps {
-    title: string
+    title?: string
 }
 
 export const PageLayoutTitle = ({title} : PageLayoutTitleProps) => {

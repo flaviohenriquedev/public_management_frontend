@@ -25,10 +25,13 @@ export const Content = tw.div<SideMenuInterface>`
     ${(p) => (p.$expanded ? "pl-[30rem]" : "pl-24")}
     
     fixed
+
     w-full
-    max-h-full
+    h-full
+    min-h-full
+
     duration-200
-    overflow-scroll
+    overflow-y-scroll
 `;
 
 export const Header = tw.header`

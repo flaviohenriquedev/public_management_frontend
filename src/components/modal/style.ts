@@ -6,6 +6,7 @@ interface ButtonProps {
 }
 
 export const Container = tw.div`
+    fixed
     
     flex
     justify-center
@@ -17,7 +18,6 @@ export const Container = tw.div`
     left-0
     right-0
     bottom-0
-    fixed
     py-20
     px-10
     backdrop-blur-sm
