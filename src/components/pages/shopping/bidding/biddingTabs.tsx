@@ -5,10 +5,20 @@ import {BiddingFilesPage} from "@/components/pages/shopping/bidding/files/Biddin
 export const biddingTabs: TPageTab[] = [
     {
         label: "Abertura",
-        content: <BiddingInitialPage />
+        content: <BiddingInitialPage/>,
+        breadcrumbs: [
+            {
+                href: "#basic_data",
+                title: "Dados Básicos"
+            },
+            {
+                href: "#object_nature",
+                title: "Natureza Objeto"
+            },
+        ]
     },
     {
         label: "Arquivos",
-        content: <BiddingFilesPage />
+        content: <BiddingFilesPage/>
     },
 ];

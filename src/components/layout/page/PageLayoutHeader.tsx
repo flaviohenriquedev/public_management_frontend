@@ -2,11 +2,10 @@
 
 import * as S from "./style";
 
-interface PageLayoutTitleProps {
+interface PageLayoutHeaderProps {
     title?: string
 }
 
-export const PageLayoutTitle = ({title} : PageLayoutTitleProps) => {
-
+export const PageLayoutHeader = ({title} : PageLayoutHeaderProps) => {
     return <S.Title id="page_layout_title">{title}</S.Title>;
 };

@@ -28,7 +28,6 @@ export const ModuleLayout = ({
                 <ModuleLayoutSidemenu routes={routes}/>
                 <ModuleLayoutContent>{children}</ModuleLayoutContent>
             </S.SidemenuAndContent>
-            <ModuleLayoutConfig />
         </ModuleLayoutContainer>
     );
 };

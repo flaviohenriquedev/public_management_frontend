@@ -5,14 +5,15 @@ import {SideMenuContext} from "@/context/SideMenuContext";
 import {TRoute} from "@/types/Global";
 import {useContext, useEffect, useState} from "react";
 import {RiExpandLeftLine, RiExpandRightLine} from "react-icons/ri";
-import {VscExpandAll, VscCollapseAll} from 'react-icons/vsc';
+import {VscCollapseAll, VscExpandAll} from 'react-icons/vsc';
+import {BsPinAngle, BsPinAngleFill} from 'react-icons/bs';
 import * as S from "./style";
 
 interface ModuleLayoutSidemenuProps {
     routes: TRoute[];
 };
 export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
-    const {expanded, setExpanded} = useContext(SideMenuContext);
+    const {expanded, setExpanded, sideMenuEntered, setSideMenuEntered} = useContext(SideMenuContext);
 
     const [searchMenu, setSearchMenu] = useState("");
     const [filteredData, setFilteredData] = useState<TRoute[]>(routes);
@@ -30,6 +31,10 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
                 />
             );
         });
+    }
+
+    function handleEnteredMenu(value: boolean) {
+        setSideMenuEntered(value);
     }
 
     useEffect(() => {
@@ -75,20 +80,24 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
     }, [routes, searchMenu]);
 
     return (
-        <S.Sidemenu $expanded={expanded} id="side_menu_container">
-            <S.SideMenuHeader $expanded={expanded} id="side_menu_header">
+        <S.Sidemenu id="side_menu_container"
+                    $expanded={expanded}
+                    $entered={sideMenuEntered}
+                    onMouseEnter={() => handleEnteredMenu(true)}
+                    onMouseLeave={() => handleEnteredMenu(false)}>
+            <S.SideMenuHeader $expanded={expanded || sideMenuEntered} id="side_menu_header">
                 <S.SearchMenu
                     id="search_menu"
-                    $expanded={expanded}
+                    $expanded={expanded || sideMenuEntered}
                     placeholder="Buscar Menu"
                     value={searchMenu}
                     onChange={(e) => setSearchMenu(e.target.value)}
                 />
                 <S.ToggleSideMenuButton id="toggle_side_menu_button" onClick={() => setExpanded(!expanded)}>
                     {expanded ? (
-                        <RiExpandLeftLine size={16} enableBackground={0}/>
+                        <BsPinAngleFill size={16} enableBackground={0}/>
                     ) : (
-                        <RiExpandRightLine size={16} enableBackground={0}/>
+                        <BsPinAngle size={16} enableBackground={0}/>
                     )}
                 </S.ToggleSideMenuButton>
             </S.SideMenuHeader>

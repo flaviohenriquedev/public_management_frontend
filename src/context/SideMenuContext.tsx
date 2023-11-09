@@ -1,15 +1,19 @@
 "use client";
 
-import { createContext, useState } from "react";
+import {createContext, useState} from "react";
 
 type SidemenuContextProps = {
     expanded: boolean;
     setExpanded: (value: boolean) => void;
+    sideMenuEntered: boolean;
+    setSideMenuEntered: (value: boolean) => void;
 };
 
 export const SideMenuContext = createContext<SidemenuContextProps>({
     expanded: true,
     setExpanded: () => {},
+    sideMenuEntered: false,
+    setSideMenuEntered: () => {},
 });
 
 export const SideMenuContextProvider = ({
@@ -18,12 +22,15 @@ export const SideMenuContextProvider = ({
     children: React.ReactNode;
 }) => {
     const [expanded, setExpanded] = useState(true);
+    const [sideMenuEntered, setSideMenuEntered] = useState<boolean>(false);
 
     return (
         <SideMenuContext.Provider
             value={{
                 expanded,
                 setExpanded,
+                sideMenuEntered,
+                setSideMenuEntered
             }}
         >
             {children}

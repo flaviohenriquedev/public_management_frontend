@@ -2,6 +2,7 @@ import tw from "tailwind-styled-components";
 
 interface SideMenuInterface {
     $expanded: boolean;
+    $entered?: boolean;
 }
 
 
@@ -29,9 +30,7 @@ export const Content = tw.div<SideMenuInterface>`
     w-full
     h-full
     min-h-full
-
     duration-200
-    overflow-y-scroll
 `;
 
 export const Header = tw.header`
@@ -51,16 +50,19 @@ export const Header = tw.header`
 
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
-    ${(p) => (p.$expanded ? "w-[30rem]" : "w-24")}
-
+    ${(p) => (p.$expanded ? "w-[30rem]" : !p.$expanded && p.$entered ? "w-[30rem]" : "w-24")}
+    
     fixed
      
+    scrollbar
+    scrollbar-thumb-gray-900
+    scrollbar-track-gray-100
     flex
     flex-col
     flex-nowrap
     rounded-tr-md
     h-full
-    bg-header_bg_color
+    bg-base-100
     shadow-md
     shadow-base-200
     duration-200

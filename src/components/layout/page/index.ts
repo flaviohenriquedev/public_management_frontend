@@ -1,11 +1,11 @@
 import {PageLayoutContent} from "./PageLayoutContent";
 import {PageLayoutContainer} from "./PageLayoutContainer";
-import {PageLayoutTitle} from "./PageLayoutTitle";
+import {PageLayoutHeader} from "./PageLayoutHeader";
 import {PageLayoutFooter} from "@/components/layout/page/PageLayoutFooter";
 
 export const PageLayout = {
     Container: PageLayoutContainer,
-    Title: PageLayoutTitle,
+    Header: PageLayoutHeader,
     Content: PageLayoutContent,
     Footer: PageLayoutFooter
 };
