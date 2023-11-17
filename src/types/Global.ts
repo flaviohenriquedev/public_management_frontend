@@ -15,10 +15,9 @@ export type TButton = 'primary' | 'success' | 'warning' | 'danger'
 
 export type TOption = { value: string | number, description: string }
 
-export type TBreadcrumb = {href: string, title: string}
-
 export type TPageTab = {
     label: string;
-    content: ReactNode;
-    breadcrumbs?: TBreadcrumb[]
+    children?: ReactNode;
+    href?: string;
+    submenu?: TPageTab[]
 };

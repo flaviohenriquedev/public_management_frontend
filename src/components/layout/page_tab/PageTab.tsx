@@ -36,7 +36,7 @@ export function PageTab({tabs = []}: PageTabProps) {
                     {renderTabs()}
                 </ul>
             </div>
-            <div className="h-full min-h-full w-full">{tabs[activeTab].content}</div>
+            <div className="h-full min-h-full w-full">{tabs[activeTab].children}</div>
         </div>
     );
 }

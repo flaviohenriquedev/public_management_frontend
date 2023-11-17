@@ -5,50 +5,61 @@ import {BiddingFilesPage} from "@/components/pages/shopping/bidding/files/Biddin
 export const biddingTabs: TPageTab[] = [
     {
         label: "Abertura",
-        content: <BiddingInitialPage/>,
-        breadcrumbs: [
+        children: <BiddingInitialPage/>,
+        submenu: [
             {
+                label: "Dados Básicos",
                 href: "#basic_data",
-                title: "Dados Básicos"
             },
             {
-                href: "#object_nature",
-                title: "Natureza Objeto"
+                label: "Natureza Objeto",
+                href: "#basic_data",
             },
+            {
+                label: "Contratos",
+                href: "#basic_data",
+            },
+            {
+                label: "O.F.",
+                href: "#basic_data",
+            }
         ]
     },
     {
-        label: "Arquivos",
-        content: <BiddingFilesPage/>,
-        breadcrumbs: [
+        label: "M. Preços",
+        submenu: [
             {
-                href: "#basic_data",
-                title: "TESTE"
+                label: "Proposta"
             },
             {
-                href: "#object_nature",
-                title: "TESTE2"
+                label: "Vencedores"
+            },
+            {
+                label: "Importação/Exportação",
+                submenu: [
+                    {
+                        label: "GPregões"
+                    },
+                    {
+                        label: "LicitaNet"
+                    },
+                    {
+                        label: "PCP"
+                    },
+                    {
+                        label: "Saldo Por Planilha"
+                    },
+                    {
+                        label: "Comprasnet"
+                    },
+                ]
+            },
+            {
+                label: "Registro de Preço"
+            },
+            {
+                label: "Ata de Registro de Preço"
             },
         ]
-    },
-    {
-        label: "Parecer",
-        content: <h1>PARECER</h1>,
-    },
-    {
-        label: "Responsável",
-        content: <h1>RESPONSÁVEL</h1>,
-    },
-    {
-        label: "Solicitação",
-        content: <h1>SOLICITAÇÃO</h1>,
-    },
-    {
-        label: "Dotação",
-        content: <h1>DOTAÇÃO</h1>,
-    },
-    {
-        label: "Hab. Cred.",
-        content: <h1>Hab. Cred.</h1>,
     },
 ];
