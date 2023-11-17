@@ -14,7 +14,7 @@ export const Title = tw.div`
     rounded-bl-md
     rounded-tl-md
     min-h-[3rem]
-    bg-header_bg_color
+    bg-base-100
     shadow-md
     shadow-base-200
 `;
@@ -23,10 +23,13 @@ export const Content = tw.div`
     w-full
     h-auto
     min-h-screen
+    max-h-screen
     rounded-tl-md
     p-2
-    bg-header_bg_color
+    bg-base-100
     shadow-lg
+    overflow-y-scroll
+    pb-[20rem]
 `;
 
 export const Footer = tw.div`

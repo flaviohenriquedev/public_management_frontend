@@ -19,14 +19,11 @@ export const SidemenuAndContent = tw.div`
     w-full
     h-auto
     min-h-full
-    pt-[3rem]
+    pt-[2.5rem]
 `;
 
 export const Content = tw.div<SideMenuInterface>`
     ${(p) => (p.$expanded ? "pl-[30rem]" : "pl-24")}
-    
-    fixed
-
     w-full
     h-full
     min-h-full
@@ -51,18 +48,13 @@ export const Header = tw.header`
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
     ${(p) => (p.$expanded ? "w-[30rem]" : !p.$expanded && p.$entered ? "w-[30rem]" : "w-24")}
-    
     fixed
-     
-    scrollbar
-    scrollbar-thumb-gray-900
-    scrollbar-track-gray-100
     flex
     flex-col
-    flex-nowrap
     rounded-tr-md
     h-full
-    bg-base-100
+    backdrop-blur-md
+    bg-base-100/50
     shadow-md
     shadow-base-200
     duration-200

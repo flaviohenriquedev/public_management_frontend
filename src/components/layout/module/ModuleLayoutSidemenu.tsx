@@ -88,6 +88,7 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
             <S.SideMenuHeader $expanded={expanded || sideMenuEntered} id="side_menu_header">
                 <S.SearchMenu
                     id="search_menu"
+                    type="search"
                     $expanded={expanded || sideMenuEntered}
                     placeholder="Buscar Menu"
                     value={searchMenu}

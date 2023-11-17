@@ -1,5 +1,4 @@
 import * as S from "./style";
-import {Container} from "./style";
 
 interface ModuleLayoutContainerProps {
     children: React.ReactNode;
