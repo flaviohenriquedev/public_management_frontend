@@ -5,7 +5,6 @@ export const Section = tw.section`
     flex-col
     gap-3
     mb-[2rem]
-    p-2
     rounded-md
 `
 
