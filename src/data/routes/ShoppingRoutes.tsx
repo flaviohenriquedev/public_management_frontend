@@ -81,13 +81,13 @@ export const ShoppingRoutes: TRoute[] = [
             {
                 description: "2 - Dispensa Licitação",
                 pageName: "Dispensa Licitação",
-                href: "/manager/shopping/register/dispensation_bidding",
+                href: "#",
             },
             {
                 description: "3 - Licitação",
                 pageName: "Licitação",
                 breadcrumbLink: "bidding",
-                href: "/manager/shopping/register/bidding",
+                href: "/manager/shopping/bidding/register",
             },
 
             {

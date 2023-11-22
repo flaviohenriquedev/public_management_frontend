@@ -1,27 +1,79 @@
 import {TPageTab} from "@/types/Global";
 import {BiddingInitialPage} from "@/components/pages/shopping/bidding/initial/BiddingInitialPage";
-import {BiddingFilesPage} from "@/components/pages/shopping/bidding/files/BiddingFilesPage";
 
 export const biddingTabs: TPageTab[] = [
     {
-        label: "Abertura",
-        children: <BiddingInitialPage/>,
+        label: "Cadastro",
         submenu: [
             {
                 label: "Dados Básicos",
-                href: "#basic_data",
+                href: "/manager/shopping/bidding/register",
             },
             {
                 label: "Natureza Objeto",
-                href: "#basic_data",
+                href: "/manager/shopping/bidding/register/nature_object",
             },
             {
                 label: "Contratos",
-                href: "#basic_data",
+                href: "/manager/shopping/bidding/register/contract",
             },
             {
                 label: "O.F.",
-                href: "#basic_data",
+                href: "/manager/shopping/bidding/register/order_supply",
+            }
+        ]
+    },
+    {
+        label: "Arquivos",
+        href: "#"
+    },
+    {
+        label: "Parecer",
+        href: "#"
+    },
+    {
+        label: "Responsável",
+        href: "#"
+    },
+    {
+        label: "Solicitação",
+        submenu: [
+            {
+                label: "Solicitações",
+                href: "#"
+            },
+            {
+                label: "Produtos Apurados",
+                href: "#"
+            }
+        ]
+    },
+    {
+        label: "Dotação",
+        href: "#"
+    },
+    {
+        label: "Hab. Cred.",
+        submenu: [
+            {
+                label: "Informações Básicas",
+                href: "#"
+            },
+            {
+                label: "Informações Societários",
+                href: "#"
+            },
+            {
+                label: "Arquivos",
+                href: "#"
+            },
+            {
+                label: "Documentos",
+                href: "#"
+            },
+            {
+                label: "Credenciado",
+                href: "#"
             }
         ]
     },
@@ -62,4 +114,42 @@ export const biddingTabs: TPageTab[] = [
             },
         ]
     },
+    {
+        label: "Julgamento",
+        submenu: [
+            {
+                label: "Julgamento",
+                href: "#"
+            },
+            {
+                label: "Atas",
+                href: "#"
+            }
+        ]
+    },
+    {
+        label: "Pendência",
+        href: "#"
+    },
+    // {
+    //     label: "Colare",
+    //     submenu: [
+    //         {
+    //             label: "Colare Fase 1",
+    //             href: "#"
+    //         },
+    //         {
+    //             label: "Colare Fase 2",
+    //             href: "#"
+    //         },
+    //         {
+    //             label: "Colare Sit. Procedimento",
+    //             href: "#"
+    //         }
+    //     ]
+    // },
+    // {
+    //     label: "PNCP",
+    //     href: "#"
+    // },
 ];
