@@ -1,4 +1,4 @@
-export default function BiddingContractPage() {
+export default function BiddingRegisterContractPage() {
     return (
         <div>
             CONTRATOS

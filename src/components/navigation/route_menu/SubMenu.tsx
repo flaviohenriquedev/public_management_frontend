@@ -3,18 +3,15 @@ import {useRouter} from "next/navigation";
 import * as S from "./style";
 import {MdOutlineSkipNext} from 'react-icons/md'
 import {BsChevronDoubleDown} from 'react-icons/bs'
-import {SideMenuSubItemTitle} from "./style";
 
 interface SubMenuProps {
     description: string;
-    pageName?: string;
     children: React.ReactNode;
     href?: string;
 }
 
 export const SubMenu = ({
                             description,
-                            pageName,
                             children,
                             href,
                         }: SubMenuProps) => {
@@ -23,10 +20,7 @@ export const SubMenu = ({
 
     function handleClick() {
         if (href) {
-            let hrefWithPagename = `${href}?pn=${pageName}`;
-            route.push(
-                href.startsWith("/") ? hrefWithPagename : "/" + hrefWithPagename
-            );
+            route.push(href.startsWith("/") ? href : "/" + href);
         } else {
             setSubMenuListClosed(!subMenuListClosed);
         }

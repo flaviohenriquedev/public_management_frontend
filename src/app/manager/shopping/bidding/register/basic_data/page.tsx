@@ -1,9 +1,8 @@
 import {BiddingPage} from "@/components/pages/shopping/bidding/BiddingPage";
 
-const SH_BiddingPage = () => {
+export default function BiddingRegisterPage () {
     return (
         <BiddingPage />
     );
 };
 
-export default SH_BiddingPage;

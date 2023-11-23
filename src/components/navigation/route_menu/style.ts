@@ -52,7 +52,8 @@ export const ExpandIcon = tw.div<SideMenuItemHeaderInterface>`
 `
 
 export const DescriptionContainer = tw.div<SideMenuItemHeaderInterface>`
-    ${(p) => (p.expanded ? "" : "text-[0]")}
+    ${(p) => (p.expanded ? "text-[11pt]" : "text-[0]")}
+    
     transition-all
     ease-in-out
 `;

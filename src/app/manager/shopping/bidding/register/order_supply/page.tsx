@@ -1,4 +1,4 @@
-export default function BiddingOrderSupplyPage() {
+export default function BiddingRegisterOrderSupplyPage() {
     return (
         <div>
             O.F.

@@ -7,7 +7,7 @@ export const biddingTabs: TPageTab[] = [
         submenu: [
             {
                 label: "Dados Básicos",
-                href: "/manager/shopping/bidding/register",
+                href: "/manager/shopping/bidding/register/basic_data",
             },
             {
                 label: "Natureza Objeto",
@@ -50,30 +50,30 @@ export const biddingTabs: TPageTab[] = [
     },
     {
         label: "Dotação",
-        href: "#"
+        href: "/manager/shopping/bidding/budget_spending"
     },
     {
         label: "Hab. Cred.",
         submenu: [
             {
                 label: "Informações Básicas",
-                href: "#"
+                href: "/manager/shopping/bidding/qualification_accreditation/basic_information"
             },
             {
                 label: "Informações Societários",
-                href: "#"
+                href: "/manager/shopping/bidding/qualification_accreditation/corporate_information"
             },
             {
                 label: "Arquivos",
-                href: "#"
+                href: "/manager/shopping/bidding/qualification_accreditation/file"
             },
             {
                 label: "Documentos",
-                href: "#"
+                href: "/manager/shopping/bidding/qualification_accreditation/documents"
             },
             {
                 label: "Credenciado",
-                href: "#"
+                href: "/manager/shopping/bidding/qualification_accreditation/accredited"
             }
         ]
     },
@@ -81,36 +81,49 @@ export const biddingTabs: TPageTab[] = [
         label: "M. Preços",
         submenu: [
             {
-                label: "Proposta"
+                label: "Proposta",
+                href: "/manager/shopping/bidding/map_price/proposal"
             },
             {
-                label: "Vencedores"
+                label: "Vencedores",
+                href: "/manager/shopping/bidding/map_price/winner"
             },
             {
                 label: "Importação/Exportação",
                 submenu: [
                     {
-                        label: "GPregões"
+                        label: "GPregões",
+                        href: "/manager/shopping/bidding/map_price/import_export/gauction"
                     },
                     {
-                        label: "LicitaNet"
+                        label: "LicitaNet",
+                        href: "/manager/shopping/bidding/map_price/import_export/licitanet"
                     },
                     {
-                        label: "PCP"
+                        label: "BLL / BNC",
+                        href: "/manager/shopping/bidding/map_price/import_export/bll_bnc"
                     },
                     {
-                        label: "Saldo Por Planilha"
+                        label: "PCP",
+                        href: "/manager/shopping/bidding/map_price/import_export/pcp"
                     },
                     {
-                        label: "Comprasnet"
+                        label: "Saldo Por Planilha",
+                        href: "/manager/shopping/bidding/map_price/import_export/balance_sheet"
+                    },
+                    {
+                        label: "Comprasnet",
+                        href: "/manager/shopping/bidding/map_price/import_export/comprasnet"
                     },
                 ]
             },
             {
-                label: "Registro de Preço"
+                label: "Registro de Preço",
+                href: "/manager/shopping/bidding/map_price/price_record"
             },
             {
-                label: "Ata de Registro de Preço"
+                label: "Ata de Registro de Preço",
+                href: "/manager/shopping/bidding/map_price/minute_price_record"
             },
         ]
     },
@@ -131,25 +144,25 @@ export const biddingTabs: TPageTab[] = [
         label: "Pendência",
         href: "#"
     },
-    // {
-    //     label: "Colare",
-    //     submenu: [
-    //         {
-    //             label: "Colare Fase 1",
-    //             href: "#"
-    //         },
-    //         {
-    //             label: "Colare Fase 2",
-    //             href: "#"
-    //         },
-    //         {
-    //             label: "Colare Sit. Procedimento",
-    //             href: "#"
-    //         }
-    //     ]
-    // },
-    // {
-    //     label: "PNCP",
-    //     href: "#"
-    // },
+    {
+        label: "Colare",
+        submenu: [
+            {
+                label: "Colare Fase 1",
+                href: "#"
+            },
+            {
+                label: "Colare Fase 2",
+                href: "#"
+            },
+            {
+                label: "Colare Sit. Procedimento",
+                href: "#"
+            }
+        ]
+    },
+    {
+        label: "PNCP",
+        href: "#"
+    },
 ];

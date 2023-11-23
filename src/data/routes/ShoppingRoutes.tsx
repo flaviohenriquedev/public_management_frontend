@@ -87,7 +87,7 @@ export const ShoppingRoutes: TRoute[] = [
                 description: "3 - Licitação",
                 pageName: "Licitação",
                 breadcrumbLink: "bidding",
-                href: "/manager/shopping/bidding/register",
+                href: "/manager/shopping/bidding/register/basic_data",
             },
 
             {

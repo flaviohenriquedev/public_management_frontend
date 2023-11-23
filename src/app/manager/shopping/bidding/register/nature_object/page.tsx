@@ -1,4 +1,4 @@
-export default function BiddingNatureObject() {
+export default function BiddingRegisterNatureObject() {
     return (
         <div>
             NATUREZA

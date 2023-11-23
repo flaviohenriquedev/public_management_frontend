@@ -1,4 +1,4 @@
-export default function BiddingRequestPurchasePage() {
+export default function BiddingRequestPurchaseRequestsPage() {
     return (
         <div>
             REQUEST PURCHASE

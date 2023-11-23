@@ -11,7 +11,6 @@ import {MdExpandMore} from 'react-icons/md'
 
 type MenuProps = {
     description: string;
-    pageName?: string;
     icon?: JSX.Element;
     submenu?: TRoute[];
     href?: string;
@@ -19,7 +18,6 @@ type MenuProps = {
 
 export const Menu = ({
     description,
-    pageName,
     icon,
     submenu,
     href,
@@ -33,7 +31,6 @@ export const Menu = ({
             <SubMenu
                 key={submenuitem.description}
                 description={submenuitem.description}
-                pageName={submenuitem.pageName}
                 href={submenuitem.href}
             >
                 {submenuitem.submenu && renderSubMenuItem(submenuitem.submenu)}

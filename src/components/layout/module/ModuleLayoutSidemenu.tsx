@@ -4,7 +4,6 @@ import {Menu} from "@/components/navigation/route_menu/Menu";
 import {SideMenuContext} from "@/context/SideMenuContext";
 import {TRoute} from "@/types/Global";
 import {useContext, useEffect, useState} from "react";
-import {RiExpandLeftLine, RiExpandRightLine} from "react-icons/ri";
 import {VscCollapseAll, VscExpandAll} from 'react-icons/vsc';
 import {BsPinAngle, BsPinAngleFill} from 'react-icons/bs';
 import * as S from "./style";
@@ -24,7 +23,6 @@ export const ModuleLayoutSidemenu = ({routes}: ModuleLayoutSidemenuProps) => {
                 <Menu
                     key={route.description}
                     description={route.description && route.description}
-                    pageName={route.pageName && route.pageName}
                     icon={route.icon}
                     submenu={route.submenu}
                     href={route.href}
