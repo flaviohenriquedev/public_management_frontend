@@ -40,11 +40,11 @@ export const biddingTabs: TPageTab[] = [
         submenu: [
             {
                 label: "Solicitações",
-                href: "/manager/shopping/bidding/request_purchase"
+                href: "/manager/shopping/bidding/request_purchase/requests"
             },
             {
                 label: "Produtos Apurados",
-                href: "/manager/shopping/bidding/calculation"
+                href: "/manager/shopping/bidding/request_purchase/calculation"
             }
         ]
     },
