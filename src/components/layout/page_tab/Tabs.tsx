@@ -20,7 +20,7 @@ export function Tabs({tab}: TabsProps) {
                 <Submenu label={sm.label} tab={sm.submenu} showSubMenuProp={showSubMenu}
                          onClick={() => router.push(sm.href ? sm.href : "#")}>
                     {tab.submenu &&
-                        <ul className="rounded-lg flex flex-col gap-1 absolute border border-secondary bg-primary w-52 p-2 h-auto left-full -top-2">{renderSubMenu(sm)}</ul>}
+                        <ul className="rounded-sm flex flex-col gap-1 absolute border border-secondary bg-primary w-52 p-2 h-auto left-full -top-2">{renderSubMenu(sm)}</ul>}
                 </Submenu>
             )
         })
@@ -46,7 +46,7 @@ export function Tabs({tab}: TabsProps) {
                 }
             </div>
             {tab.submenu && showMenu && (
-                <ul className="rounded-tr-lg rounded-br-lg rounded-bl-lg flex flex-col gap-1 absolute bg-primary w-52 h-auto p-2 left-0 text-[9pt] text-primary-content border border-secondary">
+                <ul className="rounded-tr-sm rounded-br-sm rounded-bl-sm flex flex-col gap-1 absolute bg-primary w-52 h-auto p-2 left-0 text-[9pt] text-primary-content border border-secondary">
                     {renderSubMenu(tab)}
                 </ul>
             )}

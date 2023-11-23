@@ -17,7 +17,7 @@ export function Submenu({label, tab, children, showSubMenuProp = false, onClick}
             onMouseEnter={tab ? () => setShowSubMenu(true) : () => {}}
             onMouseLeave={() => setShowSubMenu(false)}>
             <div onClick={onClick}
-                className="flex items-center justify-between w-full py-1 px-2 hover:bg-secondary hover:cursor-pointer rounded-lg">{label}
+                className="flex items-center justify-between w-full py-1 px-2 hover:bg-secondary hover:cursor-pointer hover:text-secondary-content rounded-sm">{label}
                 {tab && <IoIosArrowForward/>}
             </div>
             {showSubMenu && children}
