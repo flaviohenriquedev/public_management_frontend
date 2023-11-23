@@ -28,9 +28,14 @@ export function Tabs({tab}: TabsProps) {
         })
     }
 
+    function handleClickTab() {
+        tab.href ? router.push(tab.href) : ''
+    }
+
     return (
         <li onMouseEnter={() => setShowMenu(true)}
             onMouseLeave={() => setShowMenu(false)}
+            onClick={handleClickTab}
             className="w-auto text-[10pt] px-2 bg-primary text-primary-content rounded-sm relative hover:cursor-pointer hover:bg-secondary hover:text-secondary-content">
             <div className="flex items-center flex-wrap w-full gap-2">
                 <div>

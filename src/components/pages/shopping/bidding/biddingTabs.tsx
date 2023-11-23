@@ -25,26 +25,26 @@ export const biddingTabs: TPageTab[] = [
     },
     {
         label: "Arquivos",
-        href: "#"
+        href: "/manager/shopping/bidding/files"
     },
     {
         label: "Parecer",
-        href: "#"
+        href: "/manager/shopping/bidding/assessment"
     },
     {
         label: "Responsável",
-        href: "#"
+        href: "/manager/shopping/bidding/responsible"
     },
     {
         label: "Solicitação",
         submenu: [
             {
                 label: "Solicitações",
-                href: "#"
+                href: "/manager/shopping/bidding/request_purchase"
             },
             {
                 label: "Produtos Apurados",
-                href: "#"
+                href: "/manager/shopping/bidding/calculation"
             }
         ]
     },
