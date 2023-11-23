@@ -32,6 +32,7 @@ export const Content = tw.div<SideMenuInterface>`
 
 export const Header = tw.header`
     flex
+    justify-between
     items-center
     w-full
     h-9

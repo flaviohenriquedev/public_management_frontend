@@ -7,6 +7,7 @@ import {DepartmentSearchModal} from "@/components/modal/core/DepartmentSearchMod
 import {PageLayout} from "@/components/layout/page";
 import {Button} from "@/components/actions/button";
 import {openModal} from "@/functions/functions";
+import {PageFooter} from "@/components/layout/page_footer";
 
 export default function DepartmentPageContainer() {
     const [department, setDepartment] = useState<DepartmentDTO>(new DepartmentDTO())
@@ -27,7 +28,7 @@ export default function DepartmentPageContainer() {
             <PageLayout.Content>
                 <DepartmentComponent.Form department={department} setDepartment={setDepartment} cantEdit={cantEdit}/>
             </PageLayout.Content>
-            <PageLayout.Footer>
+            <PageFooter>
                 <Button.Root classbutton="primary" onClick={() => openModal("department_search_modal")}>
                     <Button.Title title="Consultar"/>
                 </Button.Root>
@@ -47,7 +48,7 @@ export default function DepartmentPageContainer() {
                 <Button.Root classbutton="primary" render={!cantEdit}>
                     <Button.Title title="Salvar"/>
                 </Button.Root>
-            </PageLayout.Footer>
+            </PageFooter>
             <DepartmentSearchModal setDepartment={handleSelectDepartment}/>
         </PageLayout.Container>
     )

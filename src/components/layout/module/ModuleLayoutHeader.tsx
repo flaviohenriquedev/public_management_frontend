@@ -2,16 +2,24 @@
 
 import * as S from "./style";
 import {usePathname} from "next/navigation";
-import {TRoute} from "@/types/Global";
+import {TOption, TRoute} from "@/types/Global";
 import {useEffect, useState} from "react";
 import {ShoppingRoutes} from "@/data/routes/ShoppingRoutes";
 import {ModuleRoutes} from "@/data/routes/ModuleRoutes";
 import Link from "next/link";
+import Select from "@/components/data_input/select/Select";
 
 interface ModuleLayoutHeaderProps {
     title: string;
     homeRoute?: string;
 }
+
+const institutions: TOption[] = [
+    {
+        value: "1",
+        description: "PREFEITURA MUNICIPAL DE INHUMAS"
+    }
+]
 
 export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderProps) => {
     const pathName = usePathname();
@@ -31,7 +39,6 @@ export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderP
                     matchingRoutes.push(route);
                 }
                 if (route.submenu) {
-                    // Verifique as rotas no submenu atual
                     const submenuMatch = route.submenu.find((submenuRoute) => submenuRoute.breadcrumbLink === value);
                     if (submenuMatch) {
                         matchingRoutes.push(submenuMatch);
@@ -39,19 +46,26 @@ export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderP
                 }
             });
         })
-
         return matchingRoutes;
     }
 
     return (
         <S.Header id="module_layout_header">
-            <ul>
-                {getRouteRecursively().map((routeItem, routeIndex) => (
-                    <li key={routeIndex}>
-                        <Link href={routeItem.href !== undefined ? routeItem.href : "#"}>{routeItem.pageName}</Link>
-                    </li>
-                ))}
-            </ul>
+            <div id="breadcrumbs" className="breadcrumbs">
+                <ul>
+                    {getRouteRecursively().map((routeItem, routeIndex) => (
+                        <li key={routeIndex}>
+                            <Link href={routeItem.href !== undefined ? routeItem.href : "#"}>{routeItem.pageName}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div>
+                <Select options={institutions} className="w-[30rem]"/>
+            </div>
+            <div>
+                REFERENCIA
+            </div>
         </S.Header>
     );
 };

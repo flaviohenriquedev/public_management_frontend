@@ -11,7 +11,6 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 
 const ButtonRoot = ({id, children, classbutton, onClick, className, render = true, heigth}: ButtonProps) => {
 
-
     return (
         <>
             {render && (

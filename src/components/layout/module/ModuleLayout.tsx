@@ -12,18 +12,16 @@ type PageLayoutProps = {
     routes: TRoute[];
     pageTitle: string;
     children: ReactNode;
-    homeRoute?: string
 };
 
 export const ModuleLayout = ({
                                  children,
                                  pageTitle,
-                                 routes,
-                                 homeRoute
+                                 routes
                              }: PageLayoutProps) => {
     return (
         <ModuleLayoutContainer>
-            <ModuleLayoutHeader title={pageTitle} homeRoute={homeRoute}/>
+            <ModuleLayoutHeader title={pageTitle}/>
             <S.SidemenuAndContent id="side_menu_content">
                 <ModuleLayoutSidemenu routes={routes}/>
                 <ModuleLayoutContent>{children}</ModuleLayoutContent>

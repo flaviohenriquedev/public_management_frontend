@@ -10,6 +10,7 @@ export const Section = tw.section`
 
 export const Title = tw.h1`
     flex
+    h-auto
     bg-secondary/30
     text-[10pt]
     text-bold

@@ -10,7 +10,7 @@ interface SelectProps extends AllHTMLAttributes<HTMLSelectElement> {
     value?: any
 }
 
-const Select = ({defaultOption = "SELECIONE", options, width, value, onChange, disabled}: SelectProps) => {
+const Select = ({defaultOption = "SELECIONE", options, width, value, onChange, disabled, className}: SelectProps) => {
 
     function renderOptions() {
         return options.map(option => {
@@ -26,8 +26,9 @@ const Select = ({defaultOption = "SELECIONE", options, width, value, onChange, d
                   value={value}
                   width={width}
                   disabled={disabled}
+                  className={className}
         >
-            <option disabled value="0">{defaultOption}</option>
+            <option disabled value="1">{defaultOption}</option>
             {renderOptions()}
         </S.Select>
     );

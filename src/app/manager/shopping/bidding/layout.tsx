@@ -6,8 +6,10 @@ import {biddingTabs} from "@/components/pages/shopping/bidding/biddingTabs";
 export default function BiddingLayout({children}: { children: React.ReactNode }) {
     return (
         <PageLayout.Container>
-            <PageTab tabs={biddingTabs} />
-            {children}
+            <PageTab tabs={biddingTabs}/>
+            <PageLayout.Content>
+                {children}
+            </PageLayout.Content>
         </PageLayout.Container>
     )
 }

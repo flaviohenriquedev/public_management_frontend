@@ -1,11 +1,11 @@
 import * as S from "./style";
 import {ReactNode} from "react";
 
-interface PageLayoutFooterProps {
+interface PageFooterProps {
     children: ReactNode
 }
 
-export function PageLayoutFooter({ children } : PageLayoutFooterProps) {
+export function PageFooter({ children } : PageFooterProps) {
     return (
         <S.Footer id="page_layout_footer">
             {children}

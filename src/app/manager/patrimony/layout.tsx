@@ -7,7 +7,7 @@ export default function PatrimonyLayout({
     children: React.ReactNode;
 }) {
     return (
-        <ModuleLayout pageTitle="Patrimônio" routes={routes} homeRoute="/manager/patrimony">
+        <ModuleLayout pageTitle="Patrimônio" routes={routes}>
             {children}
         </ModuleLayout>
     );
