@@ -5,10 +5,5 @@ type HeaderContainerProps = {
 };
 
 export const HeaderContainer = ({ children }: HeaderContainerProps) => {
-    return <S.Container id="header_container">{children}
-
-
-
-
-    </S.Container>;
+    return <S.Container id="header_container">{children}</S.Container>;
 };

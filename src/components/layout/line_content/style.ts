@@ -13,5 +13,6 @@ export const Container = tw.div<Props>`
     flex-wrap
     items-end
     w-full
+    mb-4
     gap-3
 `

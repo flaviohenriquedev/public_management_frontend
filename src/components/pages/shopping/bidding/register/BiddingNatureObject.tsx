@@ -5,10 +5,12 @@ import Select from "@/components/data_input/select/Select";
 import {TextArea} from "@/components/data_input/textarea/TextArea";
 import {Tooltip} from "@/components/data_display/tooltip";
 import {Button} from "@/components/actions/button";
-import {BiSearch} from "react-icons/bi";
 import {AiOutlineClear} from "react-icons/ai";
 import {Table} from "@/components/data_display/table";
 import {MdOutlineCancel} from "react-icons/md";
+import {IoSaveOutline} from "react-icons/io5";
+import { MdAutorenew } from "react-icons/md";
+
 
 export function BiddingNatureObject() {
     return (
@@ -27,13 +29,13 @@ export function BiddingNatureObject() {
                 <LineContent alignment="right">
                     <Tooltip message="Salvar">
                         <Button.Root classbutton="primary">
-                            <Button.Icon icon={<BiSearch/>}/>
+                            <Button.Icon icon={<IoSaveOutline />}/>
                         </Button.Root>
                     </Tooltip>
 
                     <Tooltip message="Novo">
                         <Button.Root classbutton="warning">
-                            <Button.Icon icon={<AiOutlineClear/>}/>
+                            <Button.Icon icon={<MdAutorenew />}/>
                         </Button.Root>
                     </Tooltip>
                 </LineContent>
@@ -53,8 +55,9 @@ export function BiddingNatureObject() {
                         <Table.Row>
                             <Table.Value value='1' alignment="center"/>
                             <Table.Value value="999999 - Outra natureza não listada (Descrever)" alignment="center"/>
-                            <Table.Value value="aquisição de microtrator cortador de grama e de coletor de grama" alignment="center"/>
-                            <Table.Value value={<MdOutlineCancel />} alignment="center"/>
+                            <Table.Value value="aquisição de microtrator cortador de grama e de coletor de grama"
+                                         alignment="center"/>
+                            <Table.Value value={<MdOutlineCancel/>} alignment="center"/>
                         </Table.Row>
                     </Table.Body>
                 </Table.Container>

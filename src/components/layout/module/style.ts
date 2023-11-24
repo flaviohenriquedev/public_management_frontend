@@ -7,7 +7,7 @@ interface SideMenuInterface {
 
 
 export const Container = tw.div`
-    mt-[4rem]
+    mt-[3rem]
     w-full
     h-screen
     z-0
@@ -89,8 +89,8 @@ export const SideMenuHeader = tw.div<SideMenuInterface>`
 
     flex
     relative
-    
-    p-1
+    px-8
+    py-1
 `;
 
 export const SearchMenu = tw.input<SideMenuInterface>`

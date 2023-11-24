@@ -1,20 +1,32 @@
 import tw from 'tailwind-styled-components'
 
-export const Section = tw.section`
+interface Props {
+    showChildren?: boolean
+}
+
+export const Section = tw.section<Props>`
     flex
     flex-col
     gap-3
-    mb-[2rem]
+    
     rounded-md
 `
 
 export const Title = tw.h1`
     flex
+    items-center
+    gap-4
     h-auto
-    bg-secondary/30
+    bg-secondary
     text-[10pt]
     text-bold
     py-1
     px-2
     rounded-md
+    
+    hover:cursor-pointer
 `
+
+export const Children = tw.div<Props>`
+    ${p => p.showChildren ? "visible mb-[2rem]" : "invisible h-0"}
+`;

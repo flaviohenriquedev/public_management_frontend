@@ -3,8 +3,9 @@ import { AiOutlineNotification } from "react-icons/ai";
 import { BiPurchaseTag } from "react-icons/bi";
 import { FaFileContract, FaSortAmountUp } from "react-icons/fa";
 import { FaRegHandshake } from "react-icons/fa";
-import { LuNewspaper } from "react-icons/lu";
+import { LuNewspaper, LuFileSpreadsheet } from "react-icons/lu";
 import { MdOutlineRequestPage, MdOutlineWarehouse } from "react-icons/md";
+
 import {BsHouses} from "react-icons/bs";
 
 const iconSize: number | string = "1.2rem";
@@ -70,7 +71,7 @@ export const ShoppingRoutes: TRoute[] = [
         ],
     },
     {
-        icon: <FaFileContract size={iconSize} />,
+        icon: <LuFileSpreadsheet size={iconSize} />,
         description: "Licitação",
         pageName: "Licitação",
         submenu: [
