@@ -1,7 +1,7 @@
+import {BiddingRegister} from "@/components/pages/shopping/bidding/register";
+
 export default function BiddingRegisterContractPage() {
     return (
-        <div>
-            CONTRATOS
-        </div>
+        <BiddingRegister.Contracts />
     )
 }

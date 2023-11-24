@@ -1,7 +1,7 @@
+import {BiddingQualification} from "@/components/pages/shopping/bidding/qualification_accreditation";
+
 export default function BiddingQualificationDocumentsPage() {
     return (
-        <div>
-            Qualification Documents
-        </div>
+        <BiddingQualification.Documents/>
     )
 }

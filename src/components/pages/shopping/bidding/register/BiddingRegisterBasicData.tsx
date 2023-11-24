@@ -10,11 +10,11 @@ import {LineContent} from "@/components/layout/line_content";
 import Select from "@/components/data_input/select/Select";
 import {Checkbox} from "@/components/data_input/checkbox";
 import {Table} from "@/components/data_display/table";
-import { MdOutlineCancel } from "react-icons/md";
+import {MdOutlineCancel} from "react-icons/md";
 import {TextArea} from "@/components/data_input/textarea/TextArea";
 
 
-export function BiddingBasicData() {
+export function BiddingRegisterBasicData() {
     return (
         <form>
             <PageSection id="basic_data" title="Dados Básicos">
@@ -100,22 +100,22 @@ export function BiddingBasicData() {
                 </LineContent>
                 <LineContent>
                     <LabelContainer title="Objeto:" notNull>
-                        <TextArea />
+                        <TextArea/>
                     </LabelContainer>
                 </LineContent>
                 <LineContent>
                     <LabelContainer title="Descrição Natureza Objeto:">
-                        <TextArea />
+                        <TextArea/>
                     </LabelContainer>
                 </LineContent>
                 <LineContent>
                     <LabelContainer title="Observações:">
-                        <TextArea />
+                        <TextArea/>
                     </LabelContainer>
                 </LineContent>
                 <LineContent>
                     <LabelContainer title="Cláusula Prorrogação:">
-                        <TextArea />
+                        <TextArea/>
                     </LabelContainer>
                 </LineContent>
                 <LineContent>
@@ -168,25 +168,26 @@ export function BiddingBasicData() {
                     <Checkbox title="Instituição Gestora:"/>
                 </LineContent>
 
-                <Table.Container>
-                    <Table.Header>
-                        <Table.Row>
-                            <Table.Title value="Nº"/>
-                            <Table.Title value="Instituição"/>
-                            <Table.Title value="Unidade"/>
-                            <Table.Title value="Excluir"/>
-                        </Table.Row>
-                    </Table.Header>
-                    <Table.Body>
-                        <Table.Row>
-                            <Table.Value value={1} alignment="center"/>
-                            <Table.Value value="PREFEITURA MUNICIPAL DE INHUMAS" alignment="center"/>
-                            <Table.Value value="SECRETARIA DE ESPORTES E TURISMO" alignment="center"/>
-                            <Table.Value value={<MdOutlineCancel />} alignment="center"/>
-                        </Table.Row>
-                    </Table.Body>
-                </Table.Container>
-
+                <LineContent>
+                    <Table.Container>
+                        <Table.Header>
+                            <Table.Row>
+                                <Table.Title value="Nº"/>
+                                <Table.Title value="Instituição"/>
+                                <Table.Title value="Unidade"/>
+                                <Table.Title value="Excluir"/>
+                            </Table.Row>
+                        </Table.Header>
+                        <Table.Body>
+                            <Table.Row>
+                                <Table.Value value={1} alignment="center"/>
+                                <Table.Value value="PREFEITURA MUNICIPAL DE INHUMAS" alignment="center"/>
+                                <Table.Value value="SECRETARIA DE ESPORTES E TURISMO" alignment="center"/>
+                                <Table.Value value={<MdOutlineCancel/>} alignment="center"/>
+                            </Table.Row>
+                        </Table.Body>
+                    </Table.Container>
+                </LineContent>
                 <LineContent>
                     <Checkbox title="Portal:"/>
                 </LineContent>

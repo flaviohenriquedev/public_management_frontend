@@ -12,7 +12,7 @@ import {IoSaveOutline} from "react-icons/io5";
 import { MdAutorenew } from "react-icons/md";
 
 
-export function BiddingNatureObject() {
+export function BiddingRegisterNatureObject() {
     return (
         <form>
             <PageSection title="Natureza do Objeto">

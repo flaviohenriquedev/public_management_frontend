@@ -1,7 +1,7 @@
+import {BiddingRequestPurchase} from "@/components/pages/shopping/bidding/request_purchase";
+
 export default function BiddingRequestPurchaseRequestsPage() {
     return (
-        <div>
-            REQUEST PURCHASE
-        </div>
+        <BiddingRequestPurchase.Purchases />
     )
 }

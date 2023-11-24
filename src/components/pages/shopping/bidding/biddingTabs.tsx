@@ -17,7 +17,7 @@ export const biddingTabs: TPageTab[] = [
                 href: "/manager/shopping/bidding/register/contract",
             },
             {
-                label: "O.F.",
+                label: "Ordem de Fornecimento",
                 href: "/manager/shopping/bidding/register/order_supply",
             }
         ]

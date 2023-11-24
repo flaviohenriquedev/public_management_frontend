@@ -34,7 +34,7 @@ export function Tabs({tab}: TabsProps) {
         <li onMouseEnter={() => setShowMenu(true)}
             onMouseLeave={() => setShowMenu(false)}
             onClick={handleClickTab}
-            className="w-auto text-[9pt] px-2 bg-primary text-primary-content rounded-sm relative z-10 hover:cursor-pointer hover:bg-secondary hover:text-secondary-content">
+            className="w-auto text-[9pt] px-2 bg-primary text-primary-content rounded-sm relative hover:cursor-pointer hover:bg-secondary hover:text-secondary-content">
             <div className="flex items-center flex-wrap w-full gap-2">
                 <div>
                     {tab.label}
