@@ -5,11 +5,9 @@ import Select from "@/components/data_input/select/Select";
 import {TextArea} from "@/components/data_input/textarea/TextArea";
 import {Tooltip} from "@/components/data_display/tooltip";
 import {Button} from "@/components/actions/button";
-import {AiOutlineClear} from "react-icons/ai";
 import {Table} from "@/components/data_display/table";
-import {MdOutlineCancel} from "react-icons/md";
+import {MdAutorenew, MdOutlineCancel} from "react-icons/md";
 import {IoSaveOutline} from "react-icons/io5";
-import { MdAutorenew } from "react-icons/md";
 
 
 export function BiddingRegisterNatureObject() {

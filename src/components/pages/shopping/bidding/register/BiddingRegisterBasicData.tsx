@@ -191,7 +191,6 @@ export function BiddingRegisterBasicData() {
                 <LineContent>
                     <Checkbox title="Portal:"/>
                 </LineContent>
-
             </PageSection>
             <PageFooter>
                 <Button.Root classbutton="success">

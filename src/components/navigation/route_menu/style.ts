@@ -67,7 +67,7 @@ export const SideMenuSubItem = tw.li`
     flex
     flex-col
     my-1
-    pl-6
+    pl-3
     py-1
     rounded-lg
     

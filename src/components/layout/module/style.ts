@@ -23,7 +23,7 @@ export const SidemenuAndContent = tw.div`
 `;
 
 export const Content = tw.div<SideMenuInterface>`
-    ${(p) => (p.$expanded ? "pl-[25rem]" : "pl-24")}
+    ${(p) => (p.$expanded ? "pl-[22rem]" : "pl-24")}
     w-full
     h-full
     min-h-full
@@ -44,11 +44,12 @@ export const Header = tw.header`
     text-lg
     breadcrumbs
     z-10
+    overflow-hidden
 `;
 
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
-    ${(p) => (p.$expanded ? "w-[25rem]" : !p.$expanded && p.$entered ? "w-[25rem]" : "w-24")}
+    ${(p) => (p.$expanded ? "w-[22rem]" : !p.$expanded && p.$entered ? "w-[22rem]" : "w-24")}
     fixed
     flex
     flex-col
@@ -89,7 +90,7 @@ export const SideMenuHeader = tw.div<SideMenuInterface>`
 
     flex
     relative
-    px-8
+    pl-8
     py-1
 `;
 

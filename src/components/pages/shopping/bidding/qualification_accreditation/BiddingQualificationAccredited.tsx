@@ -2,8 +2,10 @@ import {PageSection} from "@/components/layout/page_section";
 
 export function BiddingQualificationAccredited() {
     return (
-        <PageSection title="Societário">
+        <form>
+            <PageSection title="Societário">
 
-        </PageSection>
+            </PageSection>
+        </form>
     )
 }

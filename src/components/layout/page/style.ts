@@ -1,5 +1,9 @@
 import tw from "tailwind-styled-components";
 
+interface Props {
+    opened?:boolean
+}
+
 export const Container = tw.div`
     flex
     flex-col
@@ -29,5 +33,11 @@ export const Content = tw.div`
     bg-base-100
     shadow-lg
     overflow-y-scroll
+    scrollbar-thin
+    scrollbar-thumb-secondary
     pb-[20rem]
 `;
+
+export const Info = tw.div<Props>`
+    ${p => p.opened ? "visible" : "invisible h-0"}
+`

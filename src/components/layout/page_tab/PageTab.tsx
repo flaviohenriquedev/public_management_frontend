@@ -30,7 +30,7 @@ export function PageTab({tabs = []}: PageTabProps) {
     }
 
     return (
-        <div className="p-2">
+        <div className="p-2 border-b border-b-primary">
             <ul className="flex flex-wrap gap-1 relative z-0">
                 {renderTabs()}
             </ul>

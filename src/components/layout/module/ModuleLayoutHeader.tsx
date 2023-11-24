@@ -8,6 +8,7 @@ import {ShoppingRoutes} from "@/data/routes/ShoppingRoutes";
 import {ModuleRoutes} from "@/data/routes/ModuleRoutes";
 import Link from "next/link";
 import Select from "@/components/data_input/select/Select";
+import {Input} from "@/components/data_input/input";
 
 interface ModuleLayoutHeaderProps {
     title: string;
@@ -65,7 +66,7 @@ export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderP
                     <Select options={institutions} className="h-8 w-[30rem] text-[10pt]"/>
                 </div>
                 <div>
-                    REFERENCIA
+                    <Input type="date"/>
                 </div>
             </div>
         </S.Header>
