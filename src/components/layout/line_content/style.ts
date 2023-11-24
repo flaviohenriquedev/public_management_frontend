@@ -1,6 +1,14 @@
 import tw from 'tailwind-styled-components'
 
-export const Container = tw.div`
+interface Props {
+    alignment?: "left" | "center" | "right"
+}
+
+export const Container = tw.div<Props>`
+    ${(p) => p.alignment === "left" ? "justify-start" :
+                                                        p.alignment === "center" ? "justify-center" :
+                                                        p.alignment === "right" ? "justify-end" : "justify-start"}
+        
     flex
     flex-wrap
     items-end
