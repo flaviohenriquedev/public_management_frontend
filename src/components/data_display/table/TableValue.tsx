@@ -1,5 +1,6 @@
 import * as S from './style'
 import {HTMLAttributes} from "react";
+import {ValueContent} from "./style";
 
 interface TableValueProps {
     value: string | number | boolean | JSX.Element | undefined | null
@@ -8,8 +9,10 @@ interface TableValueProps {
 
 export function TableValue({value, alignment = "left"}: TableValueProps) {
     return (
-        <S.Value alignment={alignment}>
-            {value}
+        <S.Value>
+            <S.ValueContent alignment={alignment}>
+                {value}
+            </S.ValueContent>
         </S.Value>
     )
 }

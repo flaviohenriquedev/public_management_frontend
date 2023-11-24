@@ -5,9 +5,8 @@ export const Footer = tw.div`
     justify-end
     items-center
     w-auto
-    h-14
     gap-4
-    px-4
+    p-3
     rounded-lg
     bg-base-300
 

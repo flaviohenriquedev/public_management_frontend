@@ -13,7 +13,7 @@ export const Container = tw.button<ButtonProps>`
             p.classbutton === 'warning' ? "btn btn-warning" :
                 p.classbutton === 'danger' ? "btn btn-error" : "btn btn-info"}
                 
-    ${(p) => p.height && p.height.length > 0 ? `${p.height}` : "max-h-[2rem]"}
+    ${(p) => p.height && p.height.length > 0 ? `${p.height}` : "max-h-[1.8rem]"}
 
     flex
     justify-center
@@ -21,7 +21,7 @@ export const Container = tw.button<ButtonProps>`
     w-auto
     px-3
     min-w-[6rem]
-    min-h-[2rem]
+    min-h-[1.8rem]
     rounded-md
     
     text-[10pt]

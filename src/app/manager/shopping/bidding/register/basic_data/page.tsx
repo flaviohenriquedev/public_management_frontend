@@ -1,8 +1,8 @@
-import {BiddingPage} from "@/components/pages/shopping/bidding/BiddingPage";
+import {BiddingRegister} from "@/components/pages/shopping/bidding/register";
 
-export default function BiddingRegisterPage () {
+export default function BiddingRegisterBasicDataPage () {
     return (
-        <BiddingPage />
+        <BiddingRegister.BiddingBasicData />
     );
 };
 

@@ -1,5 +1,4 @@
 import {TPageTab} from "@/types/Global";
-import {BiddingInitialPage} from "@/components/pages/shopping/bidding/initial/BiddingInitialPage";
 
 export const biddingTabs: TPageTab[] = [
     {

@@ -36,12 +36,7 @@ export const Title = tw.th`
     border-base-100
 `
 
-export const Value = tw.td<Props>`
-
-    ${(p) => p.alignment === "left" ? "text-left" : 
-                                                    p.alignment === "center" ? "text-center" :
-                                                    p.align === "right" ? "text-right" : "text-left"}
-    
+export const Value = tw.td`
     text-[9pt]
     px-2
     border
@@ -50,5 +45,14 @@ export const Value = tw.td<Props>`
     group-hover:cursor-pointer
     group-hover:bg-primary-focus
     group-hover:text-primary-content
+`
 
+
+export const ValueContent = tw.div<Props>`
+        ${(p) => p.alignment === "left" ? "justify-start" :
+                                                            p.alignment === "center" ? "justify-center" :
+                                                            p.alignment === "right" ? "justify-end" : "justify-start"}
+        
+    flex
+    w-full
 `
