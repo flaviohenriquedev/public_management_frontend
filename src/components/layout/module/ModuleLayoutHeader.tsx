@@ -60,11 +60,13 @@ export const ModuleLayoutHeader = ({title, homeRoute = "#"}: ModuleLayoutHeaderP
                     ))}
                 </ul>
             </div>
-            <div>
-                <Select options={institutions} className="w-[30rem]"/>
-            </div>
-            <div>
-                REFERENCIA
+            <div className="flex gap-10">
+                <div>
+                    <Select options={institutions} className="h-8 w-[30rem] text-[10pt]"/>
+                </div>
+                <div>
+                    REFERENCIA
+                </div>
             </div>
         </S.Header>
     );

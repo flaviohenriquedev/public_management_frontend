@@ -1,16 +1,20 @@
 import * as S from './style'
-import {HTMLAttributes} from "react";
+import React, {HTMLAttributes} from "react";
+import {FaAsterisk} from "react-icons/fa";
 
-interface LabelContainerProps extends HTMLAttributes<HTMLDivElement>{
+
+interface LabelContainerProps extends HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode
     title: string
     width?: string
+    notNull?: boolean
 }
 
-const LabelContainer = ({ children, title, width, className }: LabelContainerProps) => {
+const LabelContainer = ({children, title, width, className, notNull}: LabelContainerProps) => {
     return (
         <S.Container width={width}>
             <S.Label>
+                {notNull && <FaAsterisk size={8} color="red"/>}
                 <S.LabelSpan className={className}>{title}</S.LabelSpan>
             </S.Label>
             {children}
