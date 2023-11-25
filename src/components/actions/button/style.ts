@@ -21,7 +21,7 @@ export const Container = tw.button<ButtonProps>`
     w-auto
     px-3
     min-w-[6rem]
-    min-h-[1.8rem]
+    min-h-[2rem]
     rounded-md
     
     text-[10pt]

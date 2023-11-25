@@ -2,6 +2,7 @@ import {PageSection} from "@/components/layout/page_section";
 import {LineContent} from "@/components/layout/line_content";
 import {Table} from "@/components/data_display/table";
 import {FiDownload} from "react-icons/fi";
+import DownloadIcon from "@/components/icons/DownloadIcon";
 
 export function BiddingRegisterOrderSupply() {
     return (
@@ -34,7 +35,7 @@ export function BiddingRegisterOrderSupply() {
                                 <Table.Value value="R$ 35.530,00" alignment="center"/>
                                 <Table.Value value="R$ 0,00" alignment="center"/>
                                 <Table.Value value="R$ 0,00" alignment="center"/>
-                                <Table.Value value={<FiDownload/>} alignment="center"/>
+                                <Table.Value value={<DownloadIcon/>} alignment="center"/>
                             </Table.Row>
                         </Table.Body>
                     </Table.Container>

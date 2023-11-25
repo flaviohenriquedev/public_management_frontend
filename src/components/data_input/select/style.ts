@@ -11,6 +11,6 @@ export const Select = tw.select<SelectProps>`
     text-secondary-content
     
     select
-    select-bordered 
-    select-sm 
+    select-bordered
+    select-sm
 `

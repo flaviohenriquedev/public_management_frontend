@@ -5,7 +5,6 @@ export const Container = tw.label`
     items-center
     gap-2
     cursor-pointer
-    flex-1
     mt-3
 `
 
