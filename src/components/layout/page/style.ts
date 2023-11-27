@@ -7,7 +7,6 @@ interface Props {
 export const Container = tw.div`
     flex
     flex-col
-    gap-2    
     min-h-full
 `;
 
@@ -38,6 +37,22 @@ export const Content = tw.div`
     pb-[20rem]
 `;
 
-export const Info = tw.div<Props>`
+export const InfoHeader = tw.div`
+    flex
+    justify-center
+    items-center
+    w-full
+    bg-secondary
+    text-[8pt]
+    text-secondary-content
+    font-bold
+    rounded-sm
+    mx-2
+    
+    hover:cursor-pointer
+    hover:bg-accent-focus
+`
+
+export const InfoContent = tw.div<Props>`
     ${p => p.opened ? "visible" : "invisible h-0"}
 `

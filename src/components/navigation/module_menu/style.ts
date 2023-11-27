@@ -9,10 +9,11 @@ export const Container = tw.div`
     w-60
     h-24
     rounded-lg
-    text-font_primary_color
+    text-base-100
     shadow-lg
     relative
-    text-base-100
+
+    hover:text-secondary-content
 `;
 
 export const Icon = tw.div`
@@ -53,4 +54,5 @@ export const Description = tw.div`
     absolute
     text-xl
     hover:cursor-pointer
+    active:-scale-1
 `;

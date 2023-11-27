@@ -11,6 +11,8 @@ export const Table = tw.table`
     border-base-300
     rounded-lg
     overflow-auto
+    table-pin-rows
+    table-pin-cols
 `
 
 export const Header = tw.thead`

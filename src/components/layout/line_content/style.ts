@@ -8,7 +8,7 @@ export const Container = tw.div<Props>`
     ${(p) => p.alignment === "left" ? "justify-start" :
                                                         p.alignment === "center" ? "justify-center" :
                                                         p.alignment === "right" ? "justify-end" : "justify-start"}
-        
+
     flex
     flex-wrap
     items-end

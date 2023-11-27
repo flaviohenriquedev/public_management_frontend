@@ -1,13 +1,9 @@
-import {ReactNode} from "react";
-import * as S from './style'
+import { ReactNode } from "react";
+import * as S from "./style";
 
 interface TableContainertProps {
-    children: ReactNode
+  children: ReactNode;
 }
-export function TableContainert({children} : TableContainertProps) {
-    return (
-        <S.Table>
-            {children}
-        </S.Table>
-    )
+export function TableContainert({ children }: TableContainertProps) {
+  return <S.Table>{children}</S.Table>;
 }
