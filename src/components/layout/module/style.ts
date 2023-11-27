@@ -1,10 +1,9 @@
 import tw from "tailwind-styled-components";
 
 interface SideMenuInterface {
-    $expanded: boolean;
-    $entered?: boolean;
+  $expanded: boolean;
+  $entered?: boolean;
 }
-
 
 export const Container = tw.div`
     mt-[3rem]
@@ -40,16 +39,18 @@ export const Header = tw.header`
     gap-2
     fixed
     bg-secondary
-    text-secondary-content
-    text-lg
-    breadcrumbs
     z-10
     overflow-hidden
 `;
 
 export const Sidemenu = tw.aside<SideMenuInterface>`
 
-    ${(p) => (p.$expanded ? "w-[22rem]" : !p.$expanded && p.$entered ? "w-[22rem]" : "w-24")}
+    ${(p) =>
+      p.$expanded
+        ? "w-[22rem]"
+        : !p.$expanded && p.$entered
+        ? "w-[22rem]"
+        : "w-24"}
     fixed
     flex
     flex-col
