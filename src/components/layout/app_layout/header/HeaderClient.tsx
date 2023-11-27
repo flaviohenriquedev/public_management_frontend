@@ -11,7 +11,7 @@ export const HeaderClient = ({ clientName }: HeaderClientProps) => {
       <Link
         target="_blank"
         href="https://inhumas.go.gov.br/"
-        className="hover:border-b-2"
+        className="hover:border-b-2 border-neutral-content"
       >
         {clientName}
       </Link>

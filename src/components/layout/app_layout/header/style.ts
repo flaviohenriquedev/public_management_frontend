@@ -8,7 +8,7 @@ export const Container = tw.header`
     pr-4
     bg-base-100
     shadow-md
-    text-font_secondary_color
+    text-neutral-content
     fixed
     z-40
     w-full
@@ -25,10 +25,10 @@ export const AvatarContainer = tw.div`
     avatar
     placeholder
     online
-`
+`;
 
 export const AvatarContent = tw.div`
     bg-neutral-focus
     text-neutral-content
     rounded-full w-12
-`
+`;
