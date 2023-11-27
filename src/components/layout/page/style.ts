@@ -53,6 +53,17 @@ export const InfoHeader = tw.div`
     hover:bg-accent-focus
 `
 
+export const InfoLine = tw.div`
+    flex
+    text-[9pt]
+    gap-4
+`
+
 export const InfoContent = tw.div<Props>`
-    ${p => p.opened ? "visible" : "invisible h-0"}
+    ${p => p.opened ? "visible gap-1 p-2" : "invisible h-0"}
+    
+    flex
+    flex-col
+    justify-center
+    w-auto
 `
