@@ -7,7 +7,7 @@ import { openModal } from "@/functions/functions";
 import LabelContainer from "@/components/data_input/label/LabelContainer";
 import { Input } from "@/components/data_input/input";
 import { LineContent } from "@/components/layout/line_content";
-import Select from "@/components/data_input/select/Select";
+import {Select} from "@/components/data_input/select";
 import { Checkbox } from "@/components/data_input/checkbox";
 import { Table } from "@/components/data_display/table";
 import { MdOutlineCancel } from "react-icons/md";

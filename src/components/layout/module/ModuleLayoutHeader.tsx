@@ -1,19 +1,14 @@
 "use client";
 
 import * as S from "./style";
-import { usePathname } from "next/navigation";
-import { TOption, TRoute } from "@/types/Global";
-import { useEffect, useState } from "react";
-import { ShoppingRoutes } from "@/data/routes/ShoppingRoutes";
-import { ModuleRoutes } from "@/data/routes/ModuleRoutes";
+import {usePathname} from "next/navigation";
+import {TOption, TRoute} from "@/types/Global";
+import {useEffect, useState} from "react";
+import {ShoppingRoutes} from "@/data/routes/ShoppingRoutes";
+import {ModuleRoutes} from "@/data/routes/ModuleRoutes";
 import Link from "next/link";
-import Select from "@/components/data_input/select/Select";
-import { Input } from "@/components/data_input/input";
-
-interface ModuleLayoutHeaderProps {
-  title: string;
-  homeRoute?: string;
-}
+import {Select} from "@/components/data_input/select";
+import {Input} from "@/components/data_input/input";
 
 const institutions: TOption[] = [
   {
@@ -22,10 +17,7 @@ const institutions: TOption[] = [
   },
 ];
 
-export const ModuleLayoutHeader = ({
-  title,
-  homeRoute = "#",
-}: ModuleLayoutHeaderProps) => {
+export const ModuleLayoutHeader = () => {
   const pathName = usePathname();
   const pathNameSplit: string[] = pathName.split("/");
   const [routes, setRoutes] = useState<TRoute[]>([]);

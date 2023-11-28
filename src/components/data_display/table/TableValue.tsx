@@ -7,7 +7,7 @@ interface TableValueProps {
     alignment?: "left" | "center" | "right"
 }
 
-export function TableValue({value, alignment = "left"}: TableValueProps) {
+export function TableValue({value, alignment = "center"}: TableValueProps) {
     return (
         <S.Value>
             <S.ValueContent alignment={alignment}>

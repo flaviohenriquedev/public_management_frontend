@@ -1,7 +1,7 @@
 'use client'
 
 import {PageSection} from "@/components/layout/page_section";
-import Select from "@/components/data_input/select/Select";
+import {Select} from "@/components/data_input/select";
 import {LineContent} from "@/components/layout/line_content";
 import LabelContainer from "@/components/data_input/label/LabelContainer";
 import {Input} from "@/components/data_input/input";
@@ -9,7 +9,6 @@ import {TextArea} from "@/components/data_input/textarea/TextArea";
 import {Checkbox} from "@/components/data_input/checkbox";
 import {Button} from "@/components/actions/button";
 import {Table} from "@/components/data_display/table";
-import {MdOutlineCancel} from "react-icons/md";
 import DownloadIcon from "@/components/icons/DownloadIcon";
 import EditIcon from "@/components/icons/EditIcon";
 import DeleteIcon from "@/components/icons/DeleteIcon";

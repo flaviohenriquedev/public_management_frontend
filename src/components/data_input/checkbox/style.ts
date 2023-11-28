@@ -5,7 +5,6 @@ export const Container = tw.label`
     items-center
     gap-2
     cursor-pointer
-    mt-3
 `
 
 export const Title = tw.span`

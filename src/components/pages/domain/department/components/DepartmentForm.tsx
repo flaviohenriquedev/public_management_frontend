@@ -2,7 +2,7 @@
 
 import {Input} from "@/components/data_input/input";
 import LabelContainer from "@/components/data_input/label/LabelContainer";
-import Select from "@/components/data_input/select/Select";
+import {Select} from "@/components/data_input/select";
 import {TOption} from "@/types/Global";
 import {Button} from "@/components/actions/button";
 import {BiSearch} from 'react-icons/bi'

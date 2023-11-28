@@ -5,7 +5,7 @@ import LabelContainer from "@/components/data_input/label/LabelContainer";
 import { Input } from "@/components/data_input/input";
 import { Button } from "@/components/actions/button";
 import { LineContent } from "@/components/layout/line_content";
-import Select from "@/components/data_input/select/Select";
+import {Select} from "@/components/data_input/select";
 import { TextArea } from "@/components/data_input/textarea/TextArea";
 import { Checkbox } from "@/components/data_input/checkbox";
 import { Table } from "@/components/data_display/table";
