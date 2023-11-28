@@ -1,10 +1,9 @@
 import tw from "tailwind-styled-components";
 
-export const Root = tw.div`
+export const Container = tw.div`
     flex
     flex-col
     gap-2    
-    h-full
 `;
 
 export const Title = tw.div`
@@ -26,4 +25,3 @@ export const Children = tw.div`
     bg-header_bg_color
     shadow-lg
 `;
-

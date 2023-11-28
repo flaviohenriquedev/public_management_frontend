@@ -1,14 +1,21 @@
-import {ShoppingRoutes as routes} from "@/data/routes/ShoppingRoutes";
-import {ModuleLayout} from "@/components/layout/module";
+import {
+  ShoppingRoutes,
+  ShoppingRoutes as routes,
+} from "@/data/routes/ShoppingRoutes";
+import { ModuleLayout } from "@/components/layout/module";
 
 export default function ShoppingLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <ModuleLayout pageTitle="Compras" routes={routes}>
-            {children}
-        </ModuleLayout>
-    );
+  return (
+    <ModuleLayout.Container>
+      <ModuleLayout.Header />
+      <ModuleLayout.SideMenuAndContent>
+        <ModuleLayout.Sidemenu routes={ShoppingRoutes} />
+        <ModuleLayout.Content>{children}</ModuleLayout.Content>
+      </ModuleLayout.SideMenuAndContent>
+    </ModuleLayout.Container>
+  );
 }

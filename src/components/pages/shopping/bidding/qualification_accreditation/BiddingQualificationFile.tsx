@@ -1,11 +1,12 @@
-import {PageSection} from "@/components/layout/page_section";
+import { PageLayout } from "@/components/layout/page";
+import { PageSection } from "@/components/layout/page_section";
 
 export function BiddingQualificationFile() {
-    return (
-        <form>
-            <PageSection title="Arquivos da Habilitação de Credenciamento">
-
-            </PageSection>
-        </form>
-    )
+  return (
+    <PageLayout.Content>
+      <form>
+        <PageSection title="Arquivos da Habilitação de Credenciamento"></PageSection>
+      </form>
+    </PageLayout.Content>
+  );
 }

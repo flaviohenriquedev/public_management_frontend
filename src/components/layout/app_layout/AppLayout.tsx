@@ -2,7 +2,6 @@ import { CgMenuGridO } from "react-icons/cg";
 
 import Header from "./header";
 import * as S from "./style";
-import { Children, Container } from "./style";
 
 type AppLayoutProps = {
   children: React.ReactNode;

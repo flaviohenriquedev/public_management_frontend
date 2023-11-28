@@ -1,11 +1,12 @@
-import {PageSection} from "@/components/layout/page_section";
+import { PageLayout } from "@/components/layout/page";
+import { PageSection } from "@/components/layout/page_section";
 
 export function BiddingQualificationAccredited() {
-    return (
-        <form>
-            <PageSection title="Societário">
-
-            </PageSection>
-        </form>
-    )
+  return (
+    <PageLayout.Content>
+      <form>
+        <PageSection title="Societário"></PageSection>
+      </form>
+    </PageLayout.Content>
+  );
 }
