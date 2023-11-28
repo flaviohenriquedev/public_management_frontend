@@ -6,7 +6,6 @@ import {ModuleLayoutHeader} from "./ModuleLayoutHeader";
 import {ModuleLayoutContainer} from "./ModuleLayoutContainer";
 import {ModuleLayoutSidemenu} from "./ModuleLayoutSidemenu";
 import {ReactNode} from "react";
-import {ModuleLayoutConfig} from "@/components/layout/module/ModuleLayoutConfig";
 
 type PageLayoutProps = {
     routes: TRoute[];
@@ -21,7 +20,7 @@ export const ModuleLayout = ({
                              }: PageLayoutProps) => {
     return (
         <ModuleLayoutContainer>
-            <ModuleLayoutHeader title={pageTitle}/>
+            <ModuleLayoutHeader/>
             <S.SidemenuAndContent id="side_menu_content">
                 <ModuleLayoutSidemenu routes={routes}/>
                 <ModuleLayoutContent>{children}</ModuleLayoutContent>
