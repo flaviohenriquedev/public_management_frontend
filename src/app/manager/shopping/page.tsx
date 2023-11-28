@@ -1,4 +1,3 @@
-import { PageContent } from "@/components/containers/page_content";
 import { PageDashboard } from "@/components/containers/page_dashboard";
 
 const ShoppingPage = () => {

@@ -1,8 +1,5 @@
-import {
-  ShoppingRoutes,
-  ShoppingRoutes as routes,
-} from "@/data/routes/ShoppingRoutes";
 import { ModuleLayout } from "@/components/layout/module";
+import { ShoppingRoutes } from "@/data/routes/ShoppingRoutes";
 
 export default function ShoppingLayout({
   children,
