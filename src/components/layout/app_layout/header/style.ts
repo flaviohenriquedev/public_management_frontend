@@ -29,5 +29,6 @@ export const AvatarContainer = tw.div`
 export const AvatarContent = tw.div`
     bg-neutral-focus
     text-neutral-content
-    rounded-full w-12
+    rounded-full
+    w-10
 `;

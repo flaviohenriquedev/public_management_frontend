@@ -16,7 +16,8 @@ export const Content = tw.div<SideMenuInterface>`
     w-full
     h-full
     min-h-full
-    p-2
+    px-2
+    py-1
     rounded-tl-md
     bg-header_bg_color
     shadow-lg
@@ -28,7 +29,7 @@ export const Header = tw.header`
     justify-between
     items-center
     w-full
-    h-9
+    h-8
     px-4
     gap-2
     bg-secondary
