@@ -1,6 +1,6 @@
 "use client";
 
-import {SideMenuContext} from "@/context/SideMenuContext";
+import {SideMenuContext} from "@/context/app/SideMenuContext";
 import {TRoute} from "@/types/Global";
 import {useContext, useState} from "react";
 import {useRouter} from "next/navigation";

@@ -1,7 +1,7 @@
 "use client";
 
 import {Menu} from "@/components/navigation/route_menu/Menu";
-import {SideMenuContext} from "@/context/SideMenuContext";
+import {SideMenuContext} from "@/context/app/SideMenuContext";
 import {TRoute} from "@/types/Global";
 import {useContext, useEffect, useState} from "react";
 import {VscCollapseAll, VscExpandAll} from 'react-icons/vsc';

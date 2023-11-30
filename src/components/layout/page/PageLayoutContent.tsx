@@ -1,5 +1,5 @@
 import * as S from "./style";
-import { ReactNode, useEffect } from "react";
+import {ReactNode} from "react";
 
 interface PageLayoutContentProps {
   children: ReactNode;

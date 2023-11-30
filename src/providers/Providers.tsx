@@ -1,18 +1,20 @@
 "use client";
 
-import {ThemeProvider, useTheme} from "next-themes";
-import { SideMenuContextProvider } from "@/context/SideMenuContext";
-import {useEffect} from "react";
+import {ThemeProvider} from "next-themes";
+import {SideMenuContextProvider} from "@/context/app/SideMenuContext";
+import {UserContextProvider} from "@/context/system/core/UserContext";
 
 type ProvidersProps = {
     children: React.ReactNode;
 };
-export const Providers = ({ children }: ProvidersProps) => {
+export const Providers = ({children}: ProvidersProps) => {
     return (
-        <ThemeProvider defaultTheme="corporate">
-            <SideMenuContextProvider>
-                {children}
-            </SideMenuContextProvider>
-        </ThemeProvider>
+        <UserContextProvider>
+            <ThemeProvider defaultTheme="corporate">
+                <SideMenuContextProvider>
+                    {children}
+                </SideMenuContextProvider>
+            </ThemeProvider>
+        </UserContextProvider>
     );
 };

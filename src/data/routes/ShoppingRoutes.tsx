@@ -1,4 +1,4 @@
-import {TPageTab, TRoute} from "@/types/Global";
+import {TRoute} from "@/types/Global";
 import {AiOutlineNotification} from "react-icons/ai";
 import {BiPurchaseTag} from "react-icons/bi";
 import {FaRegHandshake, FaSortAmountUp} from "react-icons/fa";
@@ -479,44 +479,53 @@ export const BiddingTabs: TRoute[] = [
             },
         ]
     },
-    // {
-    //     label: "Julgamento",
-    //     submenu: [
-    //         {
-    //             label: "Julgamento",
-    //             href: "#"
-    //         },
-    //         {
-    //             label: "Atas",
-    //             href: "#"
-    //         }
-    //     ]
-    // },
-    // {
-    //     label: "Pendência",
-    //     href: "#"
-    // },
-    // {
-    //     label: "Colare",
-    //     submenu: [
-    //         {
-    //             label: "Colare Fase 1",
-    //             href: "#"
-    //         },
-    //         {
-    //             label: "Colare Fase 2",
-    //             href: "#"
-    //         },
-    //         {
-    //             label: "Colare Sit. Procedimento",
-    //             href: "#"
-    //         }
-    //     ]
-    // },
-    // {
-    //     label: "PNCP",
-    //     href: "#"
-    // },
+    {
+        description: "Julgamento",
+        pageName: "Julgamento",
+        submenu: [
+            {
+                description: "Julgamento",
+                pageName: "Julgamento",
+                href: "#"
+            },
+            {
+                description: "Atas",
+                pageName: "Atas",
+                href: "#"
+            }
+        ]
+    },
+    {
+        description: "Pendência",
+        pageName: "Pendência",
+        href: "#"
+    },
+    {
+        description: "Colare",
+        pageName: "Colare",
+        submenu: [
+            {
+                description: "Colare Fase 1",
+                pageName: "Colare Fase 1",
+                href: "#"
+            },
+            {
+                description: "Colare Fase 2",
+                pageName: "Colare Fase 2",
+                href: "#"
+            },
+            {
+                description: "Colare Sit. Procedimento",
+                pageName: "Colare Sit. Procedimento",
+                href: "#"
+            }
+        ]
+    },
+    {
+        description: "PNCP",
+        pageName: "PNCP",
+        href: "#"
+    },
 ];
 
 

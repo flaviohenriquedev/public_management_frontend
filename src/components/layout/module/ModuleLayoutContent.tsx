@@ -2,7 +2,7 @@
 
 import * as S from "./style";
 import {ReactNode, useContext} from "react";
-import {SideMenuContext} from "@/context/SideMenuContext";
+import {SideMenuContext} from "@/context/app/SideMenuContext";
 
 interface ModuleLayoutContentProps {
     children: ReactNode;

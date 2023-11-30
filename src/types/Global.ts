@@ -9,7 +9,9 @@ export type TRoute = {
     submenu?: TRoute[];
 };
 
-export type Theme = { value: string, description: string }
+export type GroupTheme = 'dark' | 'light'
+
+export type Theme = { value: string, description: string, group: GroupTheme }
 
 export type TButton = 'primary' | 'success' | 'warning' | 'danger'
 
