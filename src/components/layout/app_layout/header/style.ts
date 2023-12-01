@@ -8,7 +8,7 @@ export const Container = tw.header`
     pr-4
     bg-base-100
     shadow-md
-    text-neutral-content
+    text-base-content
     z-40
     w-full
     top-0

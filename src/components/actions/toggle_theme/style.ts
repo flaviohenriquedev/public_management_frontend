@@ -10,7 +10,6 @@ export const Container = tw.div`
     flex-col
     flex-nowrap
     w-24
-
     
     hover:cursor-pointer
 `
@@ -39,6 +38,8 @@ export const List = tw.ul<ListProps>`
     bg-base-200
     rounded-lg
     overflow-y-scroll
+    scrollbar-thin
+    scrollbar-thumb-secondary
     shadow
     
     transition-all

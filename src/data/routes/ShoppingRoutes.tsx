@@ -10,166 +10,166 @@ import {BsHouses} from "react-icons/bs";
 const iconSize: number | string = "1.2rem";
 
 export const ShoppingRoutes: TRoute[] = [
-    // {
-    //     icon: <LuNewspaper size={iconSize} />,
-    //     description: "Administração",
-    //     pageName: "Administração",
-    //     href: "",
-    //     submenu: [
-    //         {
-    //             description: "01 - Colare",
-    //             pageName: "Colare",
-    //             href: "",
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Colare Compras",
-    //     pageName: "Colare Compras",
-    //     href: "/manager/shopping/construct",
-    //     submenu: [
-    //         {
-    //             description: "01 - Integração",
-    //             pageName: "Integração",
-    //         },
-    //         {
-    //             description: "02 - Cadastro Manual",
-    //             pageName: "Cadastro Manual",
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <AiOutlineNotification size={iconSize} />,
-    //     description: "Envio de Notificação",
-    //     pageName: "Envio de Notificação",
-    //     submenu: [
-    //         {
-    //             description: "01 - Envio de Notificação entre Usuários",
-    //             pageName: "Envio de Notificação entre Usuários",
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <FaSortAmountUp size={iconSize} />,
-    //     description: "Controle de Saldo",
-    //     pageName: "Controle de Saldo",
-    //     submenu: [
-    //         {
-    //             description: "01 - Consolidação Saldo Almoxarifado",
-    //             pageName: "Consolidação Saldo Almoxarifado",
-    //         },
-    //         {
-    //             description: "O2 - Consolidação Saldo Licitação",
-    //             pageName: "Consolidação Saldo Licitação",
-    //         },
-    //         {
-    //             description: "03 - Inclusão de Saldo",
-    //             pageName: "Inclusão de Saldo",
-    //         },
-    //     ],
-    // },
+    {
+        icon: <LuNewspaper size={iconSize} />,
+        description: "Administração",
+        pageName: "Administração",
+        href: "",
+        submenu: [
+            {
+                description: "01 - Colare",
+                pageName: "Colare",
+                href: "",
+            },
+        ],
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Colare Compras",
+        pageName: "Colare Compras",
+        href: "/manager/shopping/construct",
+        submenu: [
+            {
+                description: "01 - Integração",
+                pageName: "Integração",
+            },
+            {
+                description: "02 - Cadastro Manual",
+                pageName: "Cadastro Manual",
+            },
+        ],
+    },
+    {
+        icon: <AiOutlineNotification size={iconSize} />,
+        description: "Envio de Notificação",
+        pageName: "Envio de Notificação",
+        submenu: [
+            {
+                description: "01 - Envio de Notificação entre Usuários",
+                pageName: "Envio de Notificação entre Usuários",
+            },
+        ],
+    },
+    {
+        icon: <FaSortAmountUp size={iconSize} />,
+        description: "Controle de Saldo",
+        pageName: "Controle de Saldo",
+        submenu: [
+            {
+                description: "01 - Consolidação Saldo Almoxarifado",
+                pageName: "Consolidação Saldo Almoxarifado",
+            },
+            {
+                description: "O2 - Consolidação Saldo Licitação",
+                pageName: "Consolidação Saldo Licitação",
+            },
+            {
+                description: "03 - Inclusão de Saldo",
+                pageName: "Inclusão de Saldo",
+            },
+        ],
+    },
     {
         icon: <LuFileSpreadsheet size={iconSize}/>,
         description: "Licitação",
         pageName: "Licitação",
         submenu: [
-            // {
-            //     description: "1 - Adesão Registro de Preço",
-            //     pageName: "Adesão Registro de Preço",
-            // },
-            // {
-            //     description: "2 - Dispensa Licitação",
-            //     pageName: "Dispensa Licitação",
-            //     href: "#",
-            // },
+            {
+                description: "1 - Adesão Registro de Preço",
+                pageName: "Adesão Registro de Preço",
+            },
+            {
+                description: "2 - Dispensa Licitação",
+                pageName: "Dispensa Licitação",
+                href: "#",
+            },
             {
                 description: "3 - Licitação",
                 pageName: "Licitação",
                 breadcrumbLink: "bidding",
                 href: "/manager/shopping/bidding/register/basic_data",
             },
-            // {
-            //     description: "04 - Decreto Regulamentador",
-            //     pageName: "Decreto Regulamentador",
-            // },
-            // {
-            //     description: "05 - Consolidação Saldo Licitação",
-            //     pageName: "Consolidação Saldo Licitação",
-            // },
+            {
+                description: "04 - Decreto Regulamentador",
+                pageName: "Decreto Regulamentador",
+            },
+            {
+                description: "05 - Consolidação Saldo Licitação",
+                pageName: "Consolidação Saldo Licitação",
+            },
         ],
     },
-    // {
-    //     icon: <FaRegHandshake size={iconSize} />,
-    //     description: "Contrato",
-    //     pageName: "Contrato",
-    //     submenu: [
-    //         {
-    //             description: "1 - Contrato",
-    //             pageName: "Contrato",
-    //             href: "/manager/shopping/contract/register"
-    //         },
-    //         {
-    //             description: "2 - Aditivo",
-    //             pageName: "Aditivo",
-    //         },
-    //         {
-    //             description: "3 - Rescisão",
-    //             pageName: "Rescisão",
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <MdOutlineRequestPage size={iconSize} />,
-    //     description: "Requisição",
-    //     pageName: "Requisição",
-    //     submenu: [
-    //         {
-    //             description: "01 - Requisição",
-    //             pageName: "Requisição",
-    //             submenu: [
-    //                 {
-    //                     description: "1.01 - Requisição Produto / Serviço",
-    //                     pageName: "Requisição Produto / Serviço",
-    //                 },
-    //                 {
-    //                     description: "1.02 - Análise Requisição",
-    //                     pageName: "Análise Requisição",
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             description: "03 - Solic. Compra / Fornecimento",
-    //             pageName: "Solic. Copra / Fornecimento.",
-    //             submenu: [
-    //                 {
-    //                     description: "3.01 - Análise de itens por Requisição",
-    //                     pageName: "Análise de itens por Requisição",
-    //                 },
-    //                 {
-    //                     description: "3.02 - Solicitação de Compra",
-    //                     pageName: "Solicitação de Compra",
-    //                 },
-    //                 {
-    //                     description: "3.03 - Análise de Compra",
-    //                     pageName: "Análise de Compra",
-    //                 },
-    //                 {
-    //                     description: "3.04 - Correção Solicitação de Compra",
-    //                     pageName: "Correção Solicitação de Compra",
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             description: "04 - Cancelar O.F.",
-    //             pageName: "Cancelar O.F.",
-    //         },
-    //         {
-    //             description: "05 - Consultar O.F.",
-    //             pageName: "Consultar O.F.",
-    //         },
-    //     ],
-    // },
+    {
+        icon: <FaRegHandshake size={iconSize} />,
+        description: "Contrato",
+        pageName: "Contrato",
+        submenu: [
+            {
+                description: "1 - Contrato",
+                pageName: "Contrato",
+                href: "/manager/shopping/contract/register"
+            },
+            {
+                description: "2 - Aditivo",
+                pageName: "Aditivo",
+            },
+            {
+                description: "3 - Rescisão",
+                pageName: "Rescisão",
+            },
+        ],
+    },
+    {
+        icon: <MdOutlineRequestPage size={iconSize} />,
+        description: "Requisição",
+        pageName: "Requisição",
+        submenu: [
+            {
+                description: "01 - Requisição",
+                pageName: "Requisição",
+                submenu: [
+                    {
+                        description: "1.01 - Requisição Produto / Serviço",
+                        pageName: "Requisição Produto / Serviço",
+                    },
+                    {
+                        description: "1.02 - Análise Requisição",
+                        pageName: "Análise Requisição",
+                    },
+                ],
+            },
+            {
+                description: "03 - Solic. Compra / Fornecimento",
+                pageName: "Solic. Copra / Fornecimento.",
+                submenu: [
+                    {
+                        description: "3.01 - Análise de itens por Requisição",
+                        pageName: "Análise de itens por Requisição",
+                    },
+                    {
+                        description: "3.02 - Solicitação de Compra",
+                        pageName: "Solicitação de Compra",
+                    },
+                    {
+                        description: "3.03 - Análise de Compra",
+                        pageName: "Análise de Compra",
+                    },
+                    {
+                        description: "3.04 - Correção Solicitação de Compra",
+                        pageName: "Correção Solicitação de Compra",
+                    },
+                ],
+            },
+            {
+                description: "04 - Cancelar O.F.",
+                pageName: "Cancelar O.F.",
+            },
+            {
+                description: "05 - Consultar O.F.",
+                pageName: "Consultar O.F.",
+            },
+        ],
+    },
     // {
     //     icon: <MdOutlineWarehouse size={iconSize} />,
     //     description: "Almoxarifado",
