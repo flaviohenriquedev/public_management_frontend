@@ -20,13 +20,7 @@ export const Container = tw.div<Props>`
     relative
 `;
 
-export const Icon = tw.div<Props>`
-    
-    ${(p) => p.active ? `
-            transition-all
-            duration-300
-            group-hover:-translate-x-2
-    ` : "" }
+export const Icon = tw.div`
 
     flex
     justify-start
