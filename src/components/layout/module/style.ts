@@ -7,15 +7,12 @@ interface SideMenuInterface {
 
 export const Container = tw.div`
     w-full
-    h-screen
     z-0
 `;
 
 export const Content = tw.div<SideMenuInterface>`
     ${(p) => (p.$expanded ? "ml-[22rem]" : "ml-24")}
     w-full
-    h-full
-    min-h-full
     px-2
     py-1
     rounded-tl-md
@@ -33,7 +30,6 @@ export const Header = tw.header`
     px-4
     gap-2
     bg-secondary
-    z-10
     overflow-hidden
 `;
 
@@ -41,8 +37,6 @@ export const SidemenuAndContent = tw.div`
     flex
     gap-2
     w-full
-    h-auto
-    min-h-full
 `;
 
 export const Sidemenu = tw.aside<SideMenuInterface>`
@@ -57,7 +51,6 @@ export const Sidemenu = tw.aside<SideMenuInterface>`
     flex
     flex-col
     rounded-tr-md
-    h-full
     backdrop-blur-md
     bg-base-100/50
     shadow-md
@@ -65,6 +58,7 @@ export const Sidemenu = tw.aside<SideMenuInterface>`
     duration-200
     pb-14
     z-20
+    h-full
 `;
 
 export const SideMenuSearch = tw.div`
@@ -77,11 +71,10 @@ export const SideMenuSearch = tw.div`
 `;
 
 export const SideMenuList = tw.ul`
-    
+    h-full
     flex
     flex-col
     gap-2
-    h-full
     p-3
     rounded-md
     pb-[20rem]

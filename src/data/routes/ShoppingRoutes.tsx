@@ -11,6 +11,36 @@ const iconSize: number | string = "1.2rem";
 
 export const ShoppingRoutes: TRoute[] = [
     {
+        icon: <LuFileSpreadsheet size={iconSize}/>,
+        description: "Licitação",
+        pageName: "Licitação",
+        submenu: [
+            // {
+            //     description: "1 - Adesão Registro de Preço",
+            //     pageName: "Adesão Registro de Preço",
+            // },
+            // {
+            //     description: "2 - Dispensa Licitação",
+            //     pageName: "Dispensa Licitação",
+            //     href: "#",
+            // },
+            {
+                description: "Licitação",
+                pageName: "Licitação",
+                breadcrumbLink: "bidding",
+                href: "/manager/shopping/bidding/register/basic_data",
+            },
+            // {
+            //     description: "04 - Decreto Regulamentador",
+            //     pageName: "Decreto Regulamentador",
+            // },
+            // {
+            //     description: "05 - Consolidação Saldo Licitação",
+            //     pageName: "Consolidação Saldo Licitação",
+            // },
+        ],
+    },
+    {
         icon: <LuNewspaper size={iconSize} />,
         description: "Administração",
         pageName: "Administração",
@@ -66,36 +96,6 @@ export const ShoppingRoutes: TRoute[] = [
             {
                 description: "03 - Inclusão de Saldo",
                 pageName: "Inclusão de Saldo",
-            },
-        ],
-    },
-    {
-        icon: <LuFileSpreadsheet size={iconSize}/>,
-        description: "Licitação",
-        pageName: "Licitação",
-        submenu: [
-            {
-                description: "1 - Adesão Registro de Preço",
-                pageName: "Adesão Registro de Preço",
-            },
-            {
-                description: "2 - Dispensa Licitação",
-                pageName: "Dispensa Licitação",
-                href: "#",
-            },
-            {
-                description: "3 - Licitação",
-                pageName: "Licitação",
-                breadcrumbLink: "bidding",
-                href: "/manager/shopping/bidding/register/basic_data",
-            },
-            {
-                description: "04 - Decreto Regulamentador",
-                pageName: "Decreto Regulamentador",
-            },
-            {
-                description: "05 - Consolidação Saldo Licitação",
-                pageName: "Consolidação Saldo Licitação",
             },
         ],
     },
@@ -170,130 +170,130 @@ export const ShoppingRoutes: TRoute[] = [
             },
         ],
     },
-    // {
-    //     icon: <MdOutlineWarehouse size={iconSize} />,
-    //     description: "Almoxarifado",
-    //     pageName: "Almoxarifado",
-    //     submenu: [
-    //         {
-    //             description: "01 - Consolidação do Almoxarifado",
-    //             pageName: "Consolidação do Almoxarifado",
-    //         },
-    //         {
-    //             description: "02 - Entrada",
-    //             pageName: "Entrada",
-    //             submenu: [
-    //                 {
-    //                     description:
-    //                         "2.01 - Entrada de Produto / Serviço (OS / OF)",
-    //                     pageName: "Entrada de Produto  / Serviço (OS / OF)",
-    //                 },
-    //                 {
-    //                     description:
-    //                         "2.02 - Entrada de Produto / Serviço (OS / OF) Parcial",
-    //                     pageName:
-    //                         "Entrada de Produto / Serviço (OS / OF) Parcial",
-    //                 },
-    //                 {
-    //                     description: "2.03 - Entrada de Produtos / Serviços",
-    //                     pageName: "Entrada de Produtos / Serviços",
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             description: "03 - Saída",
-    //             pageName: "Saída",
-    //             submenu: [
-    //                 {
-    //                     description: "3.01 - Expurgo de Produto / Serviço",
-    //                     pageName: "Expurgo de Produto / Serviço",
-    //                 },
-    //                 {
-    //                     description: "3.02 - Saída de Produto / Serviço",
-    //                     pageName: "Saída de Produto / Serviço",
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             description: "04 - Transferência",
-    //             pageName: "Transferência",
-    //             submenu: [
-    //                 {
-    //                     description: "4.01 - Análise de Transferência",
-    //                     pageName: "Análise de Transferência",
-    //                 },
-    //                 {
-    //                     description: "4.02 - Transferência",
-    //                     pageName: "Transferência",
-    //                 },
-    //             ],
-    //         },
-    //         {
-    //             description: "05 - Requisição de Almoxarifado",
-    //             pageName: "Requisição de Almoxarifado",
-    //             submenu: [
-    //                 {
-    //                     description: "5.01 - Requisição Almoxarifado",
-    //                     pageName: "Requisição Almoxarifado",
-    //                 },
-    //                 {
-    //                     description:
-    //                         "5.02 - Análise de Requisição Almoxarifado",
-    //                     pageName: "Análise de Requisição Almoxarifado",
-    //                 },
-    //             ],
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <BsHouses size={iconSize} />,
-    //     description: "Entidades",
-    //     pageName: "Entidades",
-    //     submenu: [
-    //         {
-    //             description: "01 - Departamento",
-    //             pageName: "Departamento",
-    //             breadcrumbLink: "department",
-    //             href: "/manager/shopping/register/department",
-    //         },
-    //     ],
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Relatório",
-    //     pageName: "Relatório",
-    //     href: "/manager/shopping/order_supply",
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Configurações",
-    //     pageName: "Configurações",
-    //     href: "/manager/shopping/order_supply",
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Entidades",
-    //     pageName: "Entidades",
-    //     href: "/manager/shopping/order_supply",
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Fornecedor",
-    //     pageName: "Fornecedor",
-    //     href: "/manager/shopping/order_supply",
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Documentos",
-    //     pageName: "Documentos",
-    //     href: "/manager/shopping/order_supply",
-    // },
-    // {
-    //     icon: <BiPurchaseTag size={iconSize} />,
-    //     description: "Usuário",
-    //     pageName: "Usuário",
-    //     href: "/manager/shopping/order_supply",
-    // },
+    {
+        icon: <MdOutlineWarehouse size={iconSize} />,
+        description: "Almoxarifado",
+        pageName: "Almoxarifado",
+        submenu: [
+            {
+                description: "01 - Consolidação do Almoxarifado",
+                pageName: "Consolidação do Almoxarifado",
+            },
+            {
+                description: "02 - Entrada",
+                pageName: "Entrada",
+                submenu: [
+                    {
+                        description:
+                            "2.01 - Entrada de Produto / Serviço (OS / OF)",
+                        pageName: "Entrada de Produto  / Serviço (OS / OF)",
+                    },
+                    {
+                        description:
+                            "2.02 - Entrada de Produto / Serviço (OS / OF) Parcial",
+                        pageName:
+                            "Entrada de Produto / Serviço (OS / OF) Parcial",
+                    },
+                    {
+                        description: "2.03 - Entrada de Produtos / Serviços",
+                        pageName: "Entrada de Produtos / Serviços",
+                    },
+                ],
+            },
+            {
+                description: "03 - Saída",
+                pageName: "Saída",
+                submenu: [
+                    {
+                        description: "3.01 - Expurgo de Produto / Serviço",
+                        pageName: "Expurgo de Produto / Serviço",
+                    },
+                    {
+                        description: "3.02 - Saída de Produto / Serviço",
+                        pageName: "Saída de Produto / Serviço",
+                    },
+                ],
+            },
+            {
+                description: "04 - Transferência",
+                pageName: "Transferência",
+                submenu: [
+                    {
+                        description: "4.01 - Análise de Transferência",
+                        pageName: "Análise de Transferência",
+                    },
+                    {
+                        description: "4.02 - Transferência",
+                        pageName: "Transferência",
+                    },
+                ],
+            },
+            {
+                description: "05 - Requisição de Almoxarifado",
+                pageName: "Requisição de Almoxarifado",
+                submenu: [
+                    {
+                        description: "5.01 - Requisição Almoxarifado",
+                        pageName: "Requisição Almoxarifado",
+                    },
+                    {
+                        description:
+                            "5.02 - Análise de Requisição Almoxarifado",
+                        pageName: "Análise de Requisição Almoxarifado",
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        icon: <BsHouses size={iconSize} />,
+        description: "Entidades",
+        pageName: "Entidades",
+        submenu: [
+            {
+                description: "01 - Departamento",
+                pageName: "Departamento",
+                breadcrumbLink: "department",
+                href: "/manager/shopping/register/department",
+            },
+        ],
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Relatório",
+        pageName: "Relatório",
+        href: "/manager/shopping/order_supply",
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Configurações",
+        pageName: "Configurações",
+        href: "/manager/shopping/order_supply",
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Entidades",
+        pageName: "Entidades",
+        href: "/manager/shopping/order_supply",
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Fornecedor",
+        pageName: "Fornecedor",
+        href: "/manager/shopping/order_supply",
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Documentos",
+        pageName: "Documentos",
+        href: "/manager/shopping/order_supply",
+    },
+    {
+        icon: <BiPurchaseTag size={iconSize} />,
+        description: "Usuário",
+        pageName: "Usuário",
+        href: "/manager/shopping/order_supply",
+    },
 ];
 
 export const BiddingTabs: TRoute[] = [

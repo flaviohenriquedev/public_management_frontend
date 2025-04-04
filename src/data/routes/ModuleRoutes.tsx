@@ -10,6 +10,7 @@ export const ModuleRoutes: TRoute[] = [
         pageName: "Compras",
         breadcrumbLink: "shopping",
         href: "/manager/shopping",
+        active: true
     },
     {
         icon: <MdOutlineRealEstateAgent size={sizeIcon}/>,
@@ -17,11 +18,13 @@ export const ModuleRoutes: TRoute[] = [
         pageName: "Patrimônio",
         breadcrumbLink: "patrimony",
         href: "/manager/patrimony",
+        active: false
     },
     {
         icon: <FaPeopleGroup size={sizeIcon}/>,
         description: "Gestão de RH",
         pageName: "Gestão de RH",
         href: "/manager/patrimony",
+        active: false
     },
 ];

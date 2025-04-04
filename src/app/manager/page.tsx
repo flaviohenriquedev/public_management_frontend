@@ -7,10 +7,11 @@ export default function ManagerPage() {
     <S.Container>
       {ModuleRoutes &&
         ModuleRoutes.map((d) => (
-          <ModuleMenu.Card key={d.description}>
+          <ModuleMenu.Card key={d.description} active={d.active}>
             <ModuleMenu.Icon icon={d.icon !== undefined ? d.icon : <></>} />
             <ModuleMenu.Description
               href={d.href !== undefined ? d.href : "#"}
+              active={d.active}
               description={d.description}
             />
           </ModuleMenu.Card>

@@ -7,6 +7,7 @@ export type TRoute = {
     breadcrumbLink?: string;
     href?: string;
     submenu?: TRoute[];
+    active?: boolean
 };
 
 export type GroupTheme = 'dark' | 'light'

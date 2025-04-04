@@ -1,11 +1,11 @@
 import {ModuleLayout} from "@/components/layout/module";
 import {ShoppingRoutes} from "@/data/routes/ShoppingRoutes";
-import React from "react";
+import React, {ReactNode} from "react";
 
 export default function ShoppingLayout({
                                            children,
                                        }: {
-    children: React.ReactNode;
+    children: ReactNode;
 }) {
     return (
         <ModuleLayout.Container>

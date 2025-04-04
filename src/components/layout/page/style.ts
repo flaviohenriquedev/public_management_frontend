@@ -3,7 +3,6 @@ import tw from "tailwind-styled-components";
 export const Container = tw.section`
     flex
     flex-col
-    min-h-full
 `;
 
 export const Title = tw.div`
@@ -20,9 +19,6 @@ export const Title = tw.div`
 
 export const Content = tw.div`
     w-full
-    h-auto
-    min-h-screen
-    max-h-screen
     rounded-tl-md
     p-2
     bg-base-100

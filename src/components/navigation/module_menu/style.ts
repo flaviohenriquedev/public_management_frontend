@@ -1,22 +1,33 @@
 import tw from "tailwind-styled-components";
 
-export const Container = tw.div`
+type Props = {
+    active: boolean
+}
+
+export const Container = tw.div<Props>`
+
+    ${(p) => p.active ? "bg-secondary hover:text-secondary-content " : "bg-secondary/40 " }     
+
     group
     
     flex
     items-center
-    bg-secondary
     w-60
     h-24
     rounded-lg
     text-base-100
     shadow-lg
     relative
-
-    hover:text-secondary-content
 `;
 
-export const Icon = tw.div`
+export const Icon = tw.div<Props>`
+    
+    ${(p) => p.active ? `
+            transition-all
+            duration-300
+            group-hover:-translate-x-2
+    ` : "" }
+
     flex
     justify-start
     items-center
@@ -26,10 +37,6 @@ export const Icon = tw.div`
     rounded-bl-lg
     py-3
     px-4
-    
-    transition-all
-    duration-300
-    group-hover:-translate-x-2
 `;
 
 export const DescriptionContainer = tw.div`
@@ -41,6 +48,7 @@ export const DescriptionContainer = tw.div`
 `;
 
 export const Description = tw.div`
+
     flex
     items-center
     h-full
@@ -53,6 +61,5 @@ export const Description = tw.div`
     bg-secondary/30
     absolute
     text-xl
-    hover:cursor-pointer
     active:-scale-1
 `;
